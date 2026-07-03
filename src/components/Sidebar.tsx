@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { 
   Train, 
   PhoneCall, 
@@ -89,15 +89,45 @@ export default function Sidebar({
 }: SidebarProps) {
   const [isOpen, setIsOpen] = useState(true);
   const [openMenus, setOpenMenus] = useState({
-    transport: true,
-    telecom: true,
-    gov: true,
+    transport: false,
+    telecom: false,
+    gov: false,
     dev: false,
-    emergency: true,
-    embassy: true,
-    hotel: true,
-    hospital: true
+    emergency: false,
+    embassy: false,
+    hotel: false,
+    hospital: false
   });
+
+  const sidebarRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (isOpen) {
+        const toggleButton = document.getElementById('sidebar-toggle');
+        if (
+          sidebarRef.current &&
+          !sidebarRef.current.contains(event.target as Node) &&
+          toggleButton &&
+          !toggleButton.contains(event.target as Node)
+        ) {
+          setIsOpen(false);
+        }
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isOpen]);
+
+  const handleSelectModule = (moduleName: string) => {
+    setCurrentModule(moduleName);
+    if (window.innerWidth < 768) {
+      setIsOpen(false);
+    }
+  };
 
   const [emergencySearch, setEmergencySearch] = useState('');
   const [embassySearch, setEmbassySearch] = useState('');
@@ -248,6 +278,7 @@ export default function Sidebar({
 
       {/* Sidebar Container */}
       <div 
+        ref={sidebarRef}
         className={`fixed top-0 bottom-0 z-40 transition-all duration-300 ${
           isOpen ? 'left-0 w-72' : '-left-72 w-0'
         } md:relative md:left-0 md:w-72 flex flex-col h-full glass-panel border-r border-gold-500/20`}
@@ -275,7 +306,10 @@ export default function Sidebar({
           {/* Module 1: Transportation */}
           <div className="space-y-1">
             <button
-              onClick={() => toggleMenu('transport')}
+              onClick={() => {
+                toggleMenu('transport');
+                handleSelectModule('transport-calc');
+              }}
               className="w-full flex items-center justify-between p-2.5 rounded-lg text-gold-200 hover:text-gold-100 hover:bg-royal-800/50 transition-all duration-150 cursor-pointer"
             >
               <div className="flex items-center gap-3">
@@ -296,7 +330,7 @@ export default function Sidebar({
                 >
                   <button
                     onClick={() => {
-                      setCurrentModule('transport-calc');
+                      handleSelectModule('transport-calc');
                     }}
                     className={`w-full text-right ${!isAr && 'text-left'} py-2 px-3 rounded text-xs transition-all duration-150 ${
                       currentModule === 'transport-calc' 
@@ -308,7 +342,7 @@ export default function Sidebar({
                   </button>
                   <button
                     onClick={() => {
-                      setCurrentModule('transport-monorail');
+                      handleSelectModule('transport-monorail');
                     }}
                     className={`w-full text-right ${!isAr && 'text-left'} py-2 px-3 rounded text-xs transition-all duration-150 ${
                       currentModule === 'transport-monorail' 
@@ -320,7 +354,7 @@ export default function Sidebar({
                   </button>
                   <button
                     onClick={() => {
-                      setCurrentModule('transport-brt');
+                      handleSelectModule('transport-brt');
                     }}
                     className={`w-full text-right ${!isAr && 'text-left'} py-2 px-3 rounded text-xs transition-all duration-150 ${
                       currentModule === 'transport-brt' 
@@ -332,7 +366,7 @@ export default function Sidebar({
                   </button>
                   <button
                     onClick={() => {
-                      setCurrentModule('transport-subs');
+                      handleSelectModule('transport-subs');
                     }}
                     className={`w-full text-right ${!isAr && 'text-left'} py-2 px-3 rounded text-xs transition-all duration-150 ${
                       currentModule === 'transport-subs' 
@@ -350,7 +384,13 @@ export default function Sidebar({
           {/* Module 2: Telecom */}
           <div className="space-y-1">
             <button
-              onClick={() => toggleMenu('telecom')}
+              onClick={() => {
+                toggleMenu('telecom');
+                handleSelectModule('telecom');
+                if (setSelectedOperatorId && !selectedOperatorId) {
+                  setSelectedOperatorId('vodafone');
+                }
+              }}
               className="w-full flex items-center justify-between p-2.5 rounded-lg text-gold-200 hover:text-gold-100 hover:bg-royal-800/50 transition-all duration-150 cursor-pointer"
             >
               <div className="flex items-center gap-3">
@@ -381,7 +421,7 @@ export default function Sidebar({
                       <button
                         key={opId}
                         onClick={() => {
-                          setCurrentModule('telecom');
+                          handleSelectModule('telecom');
                           if (setSelectedOperatorId) setSelectedOperatorId(opId as any);
                         }}
                         className={`w-full text-right ${!isAr && 'text-left'} py-2 px-3 rounded text-xs transition-all duration-150 flex items-center justify-between ${
@@ -401,7 +441,7 @@ export default function Sidebar({
                   })}
                   <button
                     onClick={() => {
-                      setCurrentModule('telecom-adsl');
+                      handleSelectModule('telecom-adsl');
                     }}
                     className={`w-full text-right ${!isAr && 'text-left'} py-2 px-3 rounded text-xs transition-all duration-150 ${
                       currentModule === 'telecom-adsl' 
@@ -419,7 +459,13 @@ export default function Sidebar({
           {/* Module 3: Government Portal */}
           <div className="space-y-1">
             <button
-              onClick={() => toggleMenu('gov')}
+              onClick={() => {
+                toggleMenu('gov');
+                handleSelectModule('gov');
+                if (setSelectedGovServiceId && !selectedGovServiceId && govServices.length > 0) {
+                  setSelectedGovServiceId(govServices[0].id);
+                }
+              }}
               className="w-full flex items-center justify-between p-2.5 rounded-lg text-gold-200 hover:text-gold-100 hover:bg-royal-800/50 transition-all duration-150 cursor-pointer"
             >
               <div className="flex items-center gap-3">
@@ -444,7 +490,7 @@ export default function Sidebar({
                       <button
                         key={service.id}
                         onClick={() => {
-                          setCurrentModule('gov');
+                          handleSelectModule('gov');
                           if (setSelectedGovServiceId) setSelectedGovServiceId(service.id);
                         }}
                         className={`w-full text-right ${!isAr && 'text-left'} py-2 px-3 rounded text-xs transition-all duration-150 ${
@@ -466,7 +512,7 @@ export default function Sidebar({
           <div className="space-y-1">
             <button
               onClick={() => {
-                setCurrentModule('banks');
+                handleSelectModule('banks');
               }}
               className={`w-full flex items-center justify-between p-2.5 rounded-lg text-gold-200 hover:text-gold-100 hover:bg-royal-800/50 transition-all duration-150 cursor-pointer ${
                 currentModule === 'banks' ? 'bg-gold-500/20 text-gold-300 border border-gold-400/30 font-semibold' : ''
@@ -486,7 +532,9 @@ export default function Sidebar({
           {/* Module 3.5: Emergency Numbers & Hotlines */}
           <div className="space-y-1">
             <button
-              onClick={() => toggleMenu('emergency')}
+              onClick={() => {
+                toggleMenu('emergency');
+              }}
               className="w-full flex items-center justify-between p-2.5 rounded-lg text-gold-200 hover:text-gold-100 hover:bg-royal-800/50 transition-all duration-150 cursor-pointer"
             >
               <div className="flex items-center gap-3">
@@ -616,7 +664,13 @@ export default function Sidebar({
           {/* Module 3.6: Embassies & Consulates */}
           <div className="space-y-1">
             <button
-              onClick={() => toggleMenu('embassy')}
+              onClick={() => {
+                toggleMenu('embassy');
+                handleSelectModule('embassy');
+                if (setSelectedEmbassyId && !selectedEmbassyId && embassiesData.length > 0) {
+                  setSelectedEmbassyId(embassiesData[0].id);
+                }
+              }}
               className="w-full flex items-center justify-between p-2.5 rounded-lg text-gold-200 hover:text-gold-100 hover:bg-royal-800/50 transition-all duration-150 cursor-pointer"
             >
               <div className="flex items-center gap-3">
@@ -646,7 +700,7 @@ export default function Sidebar({
                       className={`w-full text-[11px] ${isAr ? 'pr-8 pl-3 text-right' : 'pl-8 pr-3 text-left'} py-1.5 bg-royal-950/80 border border-gold-500/30 rounded text-gold-200 placeholder-gold-500/50 focus:outline-none focus:border-gold-400 focus:ring-1 focus:ring-gold-400/30 transition-all`}
                     />
                   </div>
-
+ 
                   {/* Suggestions list */}
                   <div className="max-h-60 overflow-y-auto space-y-1.5 pr-1 scrollbar">
                     {filteredSidebarEmbassies.length > 0 ? (
@@ -656,7 +710,7 @@ export default function Sidebar({
                           <div 
                             key={item.id}
                             onClick={() => {
-                              setCurrentModule('embassy');
+                              handleSelectModule('embassy');
                               if (setSelectedEmbassyId) setSelectedEmbassyId(item.id);
                             }}
                             className={`p-2 rounded border transition-all duration-150 cursor-pointer ${
@@ -698,7 +752,13 @@ export default function Sidebar({
           {/* Module 3.7: Grand Hotels */}
           <div className="space-y-1">
             <button
-              onClick={() => toggleMenu('hotel')}
+              onClick={() => {
+                toggleMenu('hotel');
+                handleSelectModule('hotel');
+                if (setSelectedHotelId && !selectedHotelId && hotelsData.length > 0) {
+                  setSelectedHotelId(hotelsData[0].id);
+                }
+              }}
               className="w-full flex items-center justify-between p-2.5 rounded-lg text-gold-200 hover:text-gold-100 hover:bg-royal-800/50 transition-all duration-150 cursor-pointer"
             >
               <div className="flex items-center gap-3">
@@ -738,7 +798,7 @@ export default function Sidebar({
                           <div 
                             key={item.id}
                             onClick={() => {
-                              setCurrentModule('hotel');
+                              handleSelectModule('hotel');
                               if (setSelectedHotelId) setSelectedHotelId(item.id);
                             }}
                             className={`p-2 rounded border transition-all duration-150 cursor-pointer ${
@@ -779,7 +839,13 @@ export default function Sidebar({
           {/* Module 3.8: Hospitals */}
           <div className="space-y-1">
             <button
-              onClick={() => toggleMenu('hospital')}
+              onClick={() => {
+                toggleMenu('hospital');
+                handleSelectModule('hospital');
+                if (setSelectedHospitalId && !selectedHospitalId && hospitalsData.length > 0) {
+                  setSelectedHospitalId(hospitalsData[0].id);
+                }
+              }}
               className="w-full flex items-center justify-between p-2.5 rounded-lg text-gold-200 hover:text-gold-100 hover:bg-royal-800/50 transition-all duration-150 cursor-pointer"
             >
               <div className="flex items-center gap-3">
@@ -809,7 +875,7 @@ export default function Sidebar({
                       className={`w-full text-[11px] ${isAr ? 'pr-8 pl-3 text-right' : 'pl-8 pr-3 text-left'} py-1.5 bg-royal-950/80 border border-gold-500/30 rounded text-gold-200 placeholder-gold-500/50 focus:outline-none focus:border-gold-400 focus:ring-1 focus:ring-gold-400/30 transition-all`}
                     />
                   </div>
-
+ 
                   {/* Suggestions list */}
                   <div className="max-h-60 overflow-y-auto space-y-1.5 pr-1 scrollbar">
                     {filteredSidebarHospitals.length > 0 ? (
@@ -819,7 +885,7 @@ export default function Sidebar({
                           <div 
                             key={item.id}
                             onClick={() => {
-                              setCurrentModule('hospital');
+                              handleSelectModule('hospital');
                               if (setSelectedHospitalId) setSelectedHospitalId(item.id);
                             }}
                             className={`p-2 rounded border transition-all duration-150 cursor-pointer ${
@@ -857,7 +923,7 @@ export default function Sidebar({
           <div className="space-y-1">
             <button
               onClick={() => {
-                setCurrentModule('post');
+                handleSelectModule('post');
               }}
               className={`w-full flex items-center justify-between p-2.5 rounded-lg text-gold-200 hover:text-gold-100 hover:bg-royal-800/50 transition-all duration-150 cursor-pointer ${
                 currentModule === 'post' ? 'bg-gold-500/20 text-gold-300 border border-gold-400/30 font-semibold' : ''
@@ -876,7 +942,10 @@ export default function Sidebar({
           {/* Module 4: Scraper Script & dev tools */}
           <div className="space-y-1">
             <button
-              onClick={() => toggleMenu('dev')}
+              onClick={() => {
+                toggleMenu('dev');
+                handleSelectModule('scraper-script');
+              }}
               className="w-full flex items-center justify-between p-2.5 rounded-lg text-gold-200 hover:text-gold-100 hover:bg-royal-800/50 transition-all duration-150 cursor-pointer"
             >
               <div className="flex items-center gap-3">
@@ -897,7 +966,7 @@ export default function Sidebar({
                 >
                   <button
                     onClick={() => {
-                      setCurrentModule('scraper-script');
+                      handleSelectModule('scraper-script');
                     }}
                     className={`w-full text-right ${!isAr && 'text-left'} py-2 px-3 rounded text-xs transition-all duration-150 ${
                       currentModule === 'scraper-script' 
