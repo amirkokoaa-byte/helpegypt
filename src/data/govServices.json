@@ -1,0 +1,277 @@
+[
+  {
+    "id": "traffic_license_renew",
+    "titleAr": "تجديد رخصة تسيير المركبة (السيارة الملاكي)",
+    "titleEn": "Vehicle License Renewal (Private Car)",
+    "categoryAr": "خدمات المرور",
+    "categoryEn": "Traffic Services",
+    "descriptionAr": "الخدمة الرسمية لتجديد رخصة السيارة وتفادي الغرامات والعقوبات المرورية طبقاً لقانون المرور المصري لعام 2026.",
+    "descriptionEn": "Official service to renew vehicle license and avoid traffic fines & penalties under the 2026 Egyptian Traffic Law.",
+    "feesAr": "تختلف الرسوم حسب سعة المحرك (سي سي) وسنة الصنع، وتتراوح بين 1800 إلى 4500 جنيه سنوياً شاملة التأمين الإجباري والضرائب والملصق الإلكتروني ورسوم التطوير.",
+    "feesEn": "Fees vary based on engine displacement (CC) and manufacturing year, typically ranging between EGP 1800 to 4500 annually including compulsory insurance, taxes, development fees, and the electronic sticker.",
+    "durationAr": "ساعة إلى ساعتين في وحدة المرور التابع لها، أو 3 أيام عمل عبر خدمات التوصيل للمنازل (بوابة مصر الرقمية).",
+    "durationEn": "1 to 2 hours at the local traffic unit, or 3 working days via home delivery (Digital Egypt Portal).",
+    "officialUrl": "https://digital.gov.eg/",
+    "documents": [
+      { "nameAr": "بطاقة الرقم القومي سارية المفعول (وأصل للاطلاع وصورتين منها)", "nameEn": "Valid National ID card (Original for inspection + 2 copies)", "isRequired": true },
+      { "nameAr": "رخصة السيارة الحالية المنتهية أو التي قاربت على الانتهاء", "nameEn": "The current vehicle license (expired or near expiration)", "isRequired": true },
+      { "nameAr": "شهادة براءة ذمة من المخالفات المرورية (شهادة المخالفات) صادرة من النيابة العامة", "nameEn": "Traffic fines clearance certificate (Baraa’at Dhimma) issued by the Public Prosecution", "isRequired": true, "notesAr": "صالحة لمدة 15 يوماً فقط من تاريخ صدورها.", "notesEn": "Valid for only 15 days from its issuance date." },
+      { "nameAr": "نموذج الفحص الفني والبيئي (للسيارات التي يحل عليها الفحص الفني)", "nameEn": "Technical and environmental inspection form (for cars due for technical inspection)", "isRequired": true, "notesAr": "يتم الفحص الفني إجبارياً كل 3 سنوات.", "notesEn": "Technical inspection is mandatory once every 3 years." },
+      { "nameAr": "وثيقة التأمين الإجباري على السيارة لصالح للمرور", "nameEn": "Compulsory vehicle insurance policy", "isRequired": true, "notesAr": "يتم شراؤها داخل وحدة المرور أو إلكترونياً.", "notesEn": "Can be purchased inside the traffic unit or online." },
+      { "nameAr": "طفاية حريق سارية ومطابقة للمواصفات الفنية بسعة لا تقل عن 1 كجم", "nameEn": "Certified fire extinguisher (at least 1kg capacity and currently valid)", "isRequired": true },
+      { "nameAr": "حقيبة إسعافات أولية ومثلث عاكس للطوارئ وصدرية أمان", "nameEn": "First aid kit, reflective emergency triangle, and safety vest", "isRequired": true }
+    ]
+  },
+  {
+    "id": "traffic_driver_license_new",
+    "titleAr": "استخراج رخصة قيادة خاصة لأول مرة",
+    "titleEn": "First-Time Private Driving License Extraction",
+    "categoryAr": "خدمات المرور",
+    "categoryEn": "Traffic Services",
+    "descriptionAr": "الإجراءات الرسمية لاستخراج رخصة قيادة خاصة للمواطنين لأول مرة شاملة الفحص الطبي والاختبار العملي والإرشادي بمرور بلد الإقامة.",
+    "descriptionEn": "Official procedures to extract a private driving license for citizens for the first time, including medical checkup and practical driving test.",
+    "feesAr": "حوالي 3000 جنيه مصري شاملة نماذج التقديم، الفحص الطبي، فحص فصيلة الدم، الشهادات المؤمنة، ورسوم نقابة التطبيقيين وضريبة المرور.",
+    "feesEn": "Approximately EGP 3000 including application forms, medical exams, blood typing, secure certifications, syndicate fees, and traffic taxes.",
+    "durationAr": "يوم عمل واحد (بين 3 إلى 5 ساعات) في حال اجتياز الاختبارات العملية والإرشادية بنجاح.",
+    "durationEn": "One working day (approx. 3 to 5 hours) if practical and theoretical tests are passed on the first attempt.",
+    "officialUrl": "https://digital.gov.eg/",
+    "documents": [
+      { "nameAr": "بطاقة الرقم القومي سارية المفعول وصورة ضوئية واضحة منها", "nameEn": "Valid National ID card and a clear photocopy", "isRequired": true, "notesAr": "يجب أن يكون محل الإقامة مدرجاً ضمن نطاق وحدة المرور الجغرافي.", "notesEn": "The address must fall under the geographical jurisdiction of the traffic unit." },
+      { "nameAr": "أصل المؤهل الدراسي (أو شهادة محو الأمية) وصورة منها للاطلاع والتوثيق", "nameEn": "Original educational degree/certificate (or literacy certificate) + copy", "isRequired": true },
+      { "nameAr": "عدد 4 صور شخصية حديثة مقاس 4x6 بخلفية بيضاء", "nameEn": "4 recent personal photographs (size 4x6) with white background", "isRequired": true },
+      { "nameAr": "شهادة باطنة ورمد معتمدة صادرة من المركز الطبي المعتمد داخل وحدة المرور", "nameEn": "Certified internal medicine and ophthalmology (eyesight) health certificates from the traffic unit's medical center", "isRequired": true },
+      { "nameAr": "شهادة إثبات فصيلة الدم وتحليل المواد المخدرة من معامل وزارة الصحة بوحدة المرور", "nameEn": "Blood typing test and drug screening certificate issued by the Ministry of Health labs at the unit", "isRequired": true },
+      { "nameAr": "نموذج 256 مرور (طلب الحصول على رخصة قيادة) من خزينة وحدة المرور", "nameEn": "Form 256 Traffic (Driving License Application) purchased from the unit treasury", "isRequired": true }
+    ]
+  },
+  {
+    "id": "personal_marriage_cert",
+    "titleAr": "استخراج وثيقة زواج مميكنة",
+    "titleEn": "Computerized Marriage Certificate Extraction",
+    "categoryAr": "الأحوال الشخصية والمدنية",
+    "categoryEn": "Civil & Personal Status",
+    "descriptionAr": "استخراج صورة رسمية مميكنة من قسيمة وثيقة الزواج المسجلة مسبقاً بقاعدة بيانات الأحوال المدنية لتقديمها للجهات الرسمية المختلفة.",
+    "descriptionEn": "Official computerized extraction of the marriage deed previously registered in the Civil Registry database for official use.",
+    "feesAr": "85 جنيهاً مصرياً للنسخة الواحدة من قطاع الأحوال المدنية أو السجل المدني.",
+    "feesEn": "EGP 85 per copy from the Civil Registry branch or online portal.",
+    "durationAr": "10 إلى 20 دقيقة عند الاستخراج من السجل المدني المميكن، أو يوم عمل واحد عبر منصة مصر الرقمية.",
+    "durationEn": "10 to 20 minutes when extracted in-person at a computerized Civil Registry office, or 1 working day online.",
+    "officialUrl": "https://mops.gov.eg/",
+    "documents": [
+      { "nameAr": "بطاقة الرقم القومي سارية المفعول لمقدم الطلب وصورة ضوئية منها", "nameEn": "Valid National ID card of the applicant + 1 copy", "isRequired": true, "notesAr": "يسمح باستخراجها للزوج، الزوجة، أو الأقارب حتى الدرجة الثانية.", "notesEn": "Permitted for the husband, wife, or relatives up to the second degree." },
+      { "nameAr": "صورة ضوئية من وثيقة الزواج الورقية (قسيمة المأذون) إن وجدت لتسهيل البحث", "nameEn": "Photocopy of the original paper marriage contract (from the Ma'zoon) if available to expedite searching", "isRequired": false },
+      { "nameAr": "نموذج 79 استخراج وثيقة زواج مميكنة مستوفى البيانات بالكامل", "nameEn": "Form 79 (Marriage Certificate Extraction Form) fully filled out", "isRequired": true, "notesAr": "يتم الحصول عليه مجاناً أو مقابل رسوم رمزية داخل مكتب السجل.", "notesEn": "Obtained for free or for a symbolic fee at the registry desk." },
+      { "nameAr": "الرقم القومي الكامل للزوج والزوجة والاسم ثلاثياً على الأقل", "nameEn": "The full National ID numbers of both spouses and their full names", "isRequired": true }
+    ]
+  },
+  {
+    "id": "personal_family_registry",
+    "titleAr": "استخراج قيد عائلي مميكن لرب الأسرة",
+    "titleEn": "Computerized Family Registry Certificate",
+    "categoryAr": "الأحوال الشخصية والمدنية",
+    "categoryEn": "Civil & Personal Status",
+    "descriptionAr": "استخراج بيان قيد عائلي رسمي مميكن يوضح صلة القرابة وبيانات الزوج والزوجة والأولاد لإثبات الحالة الاجتماعية أو لتقديمها لمنطقة التجنيد أو جهات العمل المختلفة.",
+    "descriptionEn": "Extraction of an official computerized family tree/registry detailing the husband, wives, and children to prove social relations or for military service and job purposes.",
+    "feesAr": "90 جنيهاً للنسخة المميكنة الأولى، و85 جنيهاً لأي نسخ إضافية من مصلحة الأحوال المدنية.",
+    "feesEn": "EGP 90 for the first computerized copy, and EGP 85 for subsequent copies from the Civil Registry.",
+    "durationAr": "3 إلى 5 أيام عمل لطلب أول مرة من السجل المدني، أو فوري في حال تم تحديث البيانات وقيدها إلكترونياً مسبقاً.",
+    "durationEn": "3 to 5 working days for the first-time application, or immediate if the records are pre-validated online.",
+    "officialUrl": "https://mops.gov.eg/",
+    "documents": [
+      { "nameAr": "نموذج 84 طلب قيد عائلي مميكن من مكاتب قطاع الأحوال المدنية", "nameEn": "Form 84 (Family Registry Request Form) from the Civil Registry office", "isRequired": true },
+      { "nameAr": "صورة بطاقة الرقم القومي سارية لمقدم الطلب وصور بطاقات أفراد الأسرة", "nameEn": "Photocopy of valid National ID of the applicant + photocopies of all family members' IDs", "isRequired": true, "notesAr": "يجب أن يكون مقدم الطلب صاحب الشأن أو قريباً حتى الدرجة الثانية.", "notesEn": "Applicant must be the main beneficiary or a direct relative up to the second degree." },
+      { "nameAr": "صور شهادات الميلاد المميكنة لجميع الأبناء والزوجات بالكامل", "nameEn": "Photocopies of computerized birth certificates of all children and wives", "isRequired": true },
+      { "nameAr": "صورة من وثيقة الزواج المميكنة للزوجين (أو قسائم الزواج والطلاق المتعددة في حال وجود أكثر من زوجة)", "nameEn": "Photocopy of computerized marriage contract (or multiple marriage/divorce certificates if applicable)", "isRequired": true },
+      { "nameAr": "أصل شهادات الوفاة المميكنة لأي فرد متوفى من أفراد الأسرة (الأب، الأم، أو أحد الأبناء)", "nameEn": "Original computerized death certificates for deceased family members (father, mother, or children)", "isRequired": true },
+      { "nameAr": "أصل قيد وثيقة زواج الوالدين أو شهادة ميلاد الأب لتأكيد صلة النسب والقرابة", "nameEn": "Original parent marriage certificate or father's birth certificate to verify exact lineage", "isRequired": true }
+    ]
+  },
+  {
+    "id": "civil_national_id",
+    "titleAr": "تجديد أو استخراج بطاقة الرقم القومي للمواطنين",
+    "titleEn": "National ID Card Extraction / Renewal",
+    "categoryAr": "الأحوال الشخصية والمدنية",
+    "categoryEn": "Civil & Personal Status",
+    "descriptionAr": "استخراج بطاقة الرقم القومي لأول مرة أو تجديدها عند انتهاء صلاحيتها (7 سنوات) أو استخراج بدل فاقد/تالف.",
+    "descriptionEn": "Extracting a National ID card for the first time, renewing it upon expiration (7 years), or obtaining a replacement for lost/damaged cards.",
+    "feesAr": "50 جنيهاً للاستمارة العادية (15 يوماً)، 120 جنيهاً للاستمارة العاجلة (3 أيام)، 175 جنيهاً للاستمارة المميزة (24 ساعة)، و305 جنيهاً للاستمارة الفورية VIP.",
+    "feesEn": "EGP 50 for the Regular form (15-day delivery), EGP 120 for the Urgent form (3-day delivery), EGP 175 for the Premium form (24-hour delivery), and EGP 305 for the Instant VIP form.",
+    "durationAr": "تتراوح بين 20 دقيقة (للفورية VIP) إلى 15 يوماً (للعادية) حسب نوع استمارة التقديم.",
+    "durationEn": "Varies from 20 minutes (Instant VIP) to 15 days (Regular) depending on the form category.",
+    "officialUrl": "https://mops.gov.eg/",
+    "documents": [
+      { "nameAr": "استمارة بطاقة الرقم القومي يتم شراؤها من قطاع الأحوال المدنية بمكتب السجل المدني", "nameEn": "National ID card application form purchased from the Civil Registry office", "isRequired": true },
+      { "nameAr": "أصل شهادة الميلاد المميكنة (كمبيوتر)", "nameEn": "Original computerized birth certificate", "isRequired": true, "notesAr": "مطلوبة في حالة الاستخراج لأول مرة أو تغيير بعض البيانات الأساسية.", "notesEn": "Required for first-time applicants or when modifying basic birth details." },
+      { "nameAr": "مستند إثبات الحالة الاجتماعية (قسيمة زواج، طلاق، أو شهادة وفاة الزوج)", "nameEn": "Proof of social status (Marriage contract, divorce deed, or spouse death certificate)", "isRequired": true, "notesAr": "للإناث، أو الذكور في حال الرغبة بإثبات اسم الزوجة.", "notesEn": "For females, or males wishing to register the wife's name." },
+      { "nameAr": "مستند إثبات المهنة أو الوظيفة (خطاب من جهة العمل، كارنيه نقابي، أو شهادة دراسية معتمدة)", "nameEn": "Proof of occupation or job (Job letter, syndicate card, or accredited school/university certificate)", "isRequired": true, "notesAr": "يجب ختم الاستمارة من جهة العمل الحكومية أو تقديم طابع التأمينات للقطاع الخاص.", "notesEn": "Form must be stamped by public employers, or include social insurance stamp for private sector." },
+      { "nameAr": "مستند إثبات محل الإقامة (إيصال مرافق حديث: كهرباء، غاز، مياه أو عقد إيجار موثق بالشهر العقاري)", "nameEn": "Proof of address (Recent utility bill: electricity, gas, water or notarized lease contract)", "isRequired": true }
+    ]
+  },
+  {
+    "id": "civil_birth_cert",
+    "titleAr": "استخراج شهادة ميلاد مميكنة (كمبيوتر)",
+    "titleEn": "Computerized Birth Certificate Extraction",
+    "categoryAr": "الأحوال الشخصية والمدنية",
+    "categoryEn": "Civil & Personal Status",
+    "descriptionAr": "استخراج نسخة مميكنة رسمية من شهادة الميلاد المسجلة بقاعدة بيانات الأحوال المدنية المصرية لتقديمها للمدارس والجامعات والمعاملات الرسمية.",
+    "descriptionEn": "Extraction of a certified computerized copy of the birth registry from the Civil Status database for educational, employment, and legal needs.",
+    "feesAr": "50 جنيهاً مصرياً للمرة الأولى، و43 جنيهاً مصرياً للمرات التالية عند الاستخراج من منافذ السجل المدني.",
+    "feesEn": "EGP 50 for the first-time issue, and EGP 43 for subsequent copies from the Civil Registry offices.",
+    "durationAr": "فوري (10 دقائق) من السجل المدني أو الماكينات الذكية بالأحوال المدنية، أو 48 ساعة للتوصيل المنزلي.",
+    "durationEn": "Instant (10 minutes) inside the Civil Registry or digital self-service kiosks, or 48 hours for home delivery.",
+    "officialUrl": "https://mops.gov.eg/",
+    "documents": [
+      { "nameAr": "نموذج 40 طلب الحصول على شهادة ميلاد مميكنة مجاني من مصلحة الأحوال المدنية", "nameEn": "Form 40 (Birth Certificate Request Form) available at the Civil Registry", "isRequired": true },
+      { "nameAr": "صورة بطاقة الرقم القومي لمقدم الطلب وصورة بطاقة صاحب الشهادة إن وجدت", "nameEn": "Photocopy of the applicant's valid National ID card and the beneficiary's ID if available", "isRequired": true, "notesAr": "يقتصر استخراجها على صاحب الشأن أو الأقارب حتى الدرجة الثانية.", "notesEn": "Extraction is legally restricted to the individual or relatives up to the second degree." },
+      { "nameAr": "كتابة بيانات المولود واسم الأب والأم بالكامل في نموذج الطلب بدقة تامة", "nameEn": "Accurate specification of the beneficiary's full name, father's name, and mother's name on the form", "isRequired": true },
+      { "nameAr": "أصل شهادة الميلاد الورقية القديمة أو إخطار الولادة من مستشفى الولادة", "nameEn": "Original old paper birth certificate or official hospital birth notification", "isRequired": false, "notesAr": "مطلوب فقط في حالة استخراج الشهادة الكمبيوتر للمرة الأولى على الإطلاق بالمركز الرئيسي للبيانات.", "notesEn": "Only required for the absolute first-time computerized registry creation at the headquarters." }
+    ]
+  },
+  {
+    "id": "real_estate_register",
+    "titleAr": "تسجيل ملكية شقة أو عقار بالشهر العقاري",
+    "titleEn": "Real Estate Registration (Apartment/Property)",
+    "categoryAr": "الشهر العقاري والتوثيق",
+    "categoryEn": "Real Estate & Notary",
+    "descriptionAr": "تسجيل العقارات بالشهر العقاري طبقاً للتعديلات الأخيرة لقانون الشهر العقاري الجديد تيسيراً للمواطنين وحفظاً لحقوق الملكية العقارية.",
+    "descriptionEn": "Registering real estate ownership in the Notary Office according to recent legislative amendments designed to safeguard property rights.",
+    "feesAr": "رسوم التسجيل ثابتة بقيمة 3900 جنيه كحد أقصى للعقارات مهما بلغت مساحتها، بالإضافة لرسوم الرفع المساحي الرقمي ورسم نقابة المحامين (1% من قيمة العقد).",
+    "feesEn": "Registration fees are capped at EGP 3900 max regardless of area, plus digital survey fees and bar association registration fees (1% of contract value).",
+    "durationAr": "30 يوماً عمل بحد أقصى من تاريخ تقديم الطلب واستيفاء المستندات طبقاً للقانون الجديد.",
+    "durationEn": "30 working days maximum from the date of application submission and fulfilling all documents under the new law.",
+    "officialUrl": "https://rern.gov.eg/",
+    "documents": [
+      { "nameAr": "أصل عقد الملكية العرفي أو السند القانوني الناقل للملكية (أو حكم صحة ونفاذ)", "nameEn": "Original informal property contract, legal transfer deed, or Validity & Enforceability court ruling", "isRequired": true },
+      { "nameAr": "أصل بيان الرفع المساحي الرقمي الصادر من الجهات الحكومية المعتمدة (عبر المنصة الرقمية)", "nameEn": "Original digital survey report (Raf’ Masahy) issued by accredited government entities", "isRequired": true, "notesAr": "يتم التقديم عليه عبر منصة الرفع المساحي الرقمي وتستغرق الموافقة 7 أيام.", "notesEn": "Applied online via the digital survey platform. Approval takes around 7 days." },
+      { "nameAr": "بطاقة الرقم القومي للبائع والمشتري سارية الصلاحية وصورة منها للطلب", "nameEn": "Valid National ID cards of both buyer and seller + copies", "isRequired": true },
+      { "nameAr": "شهادة من الضرائب العقارية تفيد بسداد الضريبة العقارية المستحقة على العقار (كشف رسمي)", "nameEn": "Real Estate Tax Authority clearance certificate (Official Statement)", "isRequired": true },
+      { "nameAr": "طلب تسجيل الملكية مستوفى الدمغات ورسوم التقديم الابتدائية", "nameEn": "Property registration application form fully stamped with initial filing receipts", "isRequired": true }
+    ]
+  },
+  {
+    "id": "notary_general_power",
+    "titleAr": "استخراج توكيل رسمي عام (قضايا أو عام توثيق)",
+    "titleEn": "Official General Power of Attorney Extraction",
+    "categoryAr": "الشهر العقاري والتوثيق",
+    "categoryEn": "Real Estate & Notary",
+    "descriptionAr": "استخراج توكيل رسمي عام في القضايا أو توكيل رسمي عام شامل لتوكيل شخص آخر بالقيام بالتصرفات القانونية أو الإدارية نيابة عنك أمام مكاتب التوثيق بالشهر العقاري.",
+    "descriptionEn": "Extracting an official general power of attorney (litigation or comprehensive) authorizing another person to execute legal or administrative tasks on your behalf.",
+    "feesAr": "من 55 جنيهاً إلى 150 جنيهاً مصرياً حسب عدد الصفحات والأطراف ونوع التوكيل (عام أم خاص).",
+    "feesEn": "From EGP 55 to 150 depending on the page count, contract parties, and power of attorney category (general vs special).",
+    "durationAr": "15 إلى 30 دقيقة داخل مكتب توثيق الشهر العقاري، أو عبر حجز مسبق على تطبيق بوابة مصر الرقمية.",
+    "durationEn": "15 to 30 minutes inside the Notary Office branch, or via advanced reservation on the Digital Egypt app.",
+    "officialUrl": "https://rern.gov.eg/",
+    "documents": [
+      { "nameAr": "أصل بطاقة الرقم القومي للموكل (صاحب الشأن) سارية المفعول بالكامل وصورة ضوئية منها", "nameEn": "Original valid National ID card of the principal + 1 photocopy", "isRequired": true },
+      { "nameAr": "الاسم الكامل والرقم القومي للوكيل (المحامي أو الشخص المراد توكيله) وعنوانه بدقة", "nameEn": "The full name, National ID number, and precise home address of the agent/attorney", "isRequired": true },
+      { "nameAr": "كتابة صياغة التوكيل المطلوبة بدقة وتحديد الصلاحيات الممنوحة للوكيل", "nameEn": "Precise formulation of the power of attorney text and specifying authorized legal actions", "isRequired": true, "notesAr": "يمكن الاستعانة بالنماذج الرسمية والجاهزة للتوكيلات لدى الشهر العقاري.", "notesEn": "Standardized official templates can be utilized directly at the notary front desk." },
+      { "nameAr": "إيصال سداد الرسوم القانونية المقررة بالفيزا كارد أو نقداً بخزينة المكتب", "nameEn": "Payment receipt of the prescribed notary fees paid via debit/credit card or cash at the treasury", "isRequired": true }
+    ]
+  },
+  {
+    "id": "utilities_electricity",
+    "titleAr": "تركيب عداد كهرباء كودي جديد (للعقارات والمباني)",
+    "titleEn": "Installation of a New Coded Electricity Meter",
+    "categoryAr": "شركات المرافق والخدمات",
+    "categoryEn": "Utility Services",
+    "descriptionAr": "طلب تركيب عداد كهرباء كودي مؤقت أو رسمي للوحدات السكنية والتجارية لحساب الاستهلاك الفعلي بدلاً من نظام الممارسة.",
+    "descriptionEn": "Request to install a temporary or formal coded electricity meter for residential and commercial units to compute actual energy usage.",
+    "feesAr": "تتراوح بين 1500 إلى 3500 جنيه للعداد الأحادي المنزلي، وتصل إلى 5000 جنيه للعداد الثلاثي أو التجاري، شاملة سعر العداد والكابلات ومفاتيح التوصيل والمقايسة.",
+    "feesEn": "Ranges between EGP 1500 to 3500 for a single-phase residential meter, reaching up to EGP 5000 for three-phase or commercial meters, including device, cables, and setup.",
+    "durationAr": "15 إلى 30 يوماً عمل من تاريخ معاينة فني شركة الكهرباء للوحدة السكنية.",
+    "durationEn": "15 to 30 working days from the electricity company technician’s onsite inspection.",
+    "officialUrl": "https://eehc.gov.eg/",
+    "documents": [
+      { "nameAr": "عقد ملكية العقار أو عقد الإيجار الموثق بالشهر العقاري للوحدة المطلوب تركيب العداد بها", "nameEn": "Property ownership deed or notarized rental lease of the specific unit", "isRequired": true },
+      { "nameAr": "صورة واضحة من بطاقة الرقم القومي للمتقدم بطلب العداد (مع إحضار الأصل للاطلاع)", "nameEn": "Clear copy of applicant's National ID (Original must be presented for verification)", "isRequired": true },
+      { "nameAr": "مستند إثبات موافقة الحي أو رخصة مباني العقار الصادرة من الإدارة الهندسية بالحي أو مجلس المدينة", "nameEn": "Building permit or municipal approval from the local engineering administration", "isRequired": false, "notesAr": "إذا لم تتوفر الرخصة، يتم تركيب عداد كودي مؤقت (كارت) بدلاً من العداد الاسمي.", "notesEn": "If unavailable, a temporary coded meter (smart card) will be installed instead of a formal named one." },
+      { "nameAr": "صورة واضحة من واجهة المبنى وتأكيد مخرجات المعاينة الفنية المبدئية للعقار", "nameEn": "Clear photograph of the building facade + preliminary technical assessment output", "isRequired": true },
+      { "nameAr": "سداد رسوم المعاينة الفنية وإحضار إيصال السداد المالي للشركة", "nameEn": "Technical inspection fee payment receipt", "isRequired": true }
+    ]
+  },
+  {
+    "id": "utilities_water",
+    "titleAr": "تركيب عداد مياه منزلي جديد",
+    "titleEn": "New Home Water Meter Installation",
+    "categoryAr": "شركات المرافق والخدمات",
+    "categoryEn": "Utility Services",
+    "descriptionAr": "تقديم طلب رسمي للشركة القابضة لمياه الشرب والصرف الصحي لتركيب عداد مياه منزلي منفصل للوحدة السكنية لقياس الاستهلاك الفعلي بدقة وتجنب فواتير الاستهلاك الموحد.",
+    "descriptionEn": "Official application to the Holding Company for Water and Wastewater to install a separate water meter for a residential unit to ensure fair individual billing.",
+    "feesAr": "حوالي 1800 إلى 3200 جنيه مصري شاملة سعر عداد المياه، ومحابس التوصيل والمقايسة الفنية وأعمال الحفر والربط بالشبكة الرئيسية للشركة.",
+    "feesEn": "Approximately EGP 1800 to 3200 including meter cost, valves, technical estimation, drilling, and primary network linkage.",
+    "durationAr": "10 إلى 20 يوماً عمل من تاريخ سداد قيمة المقايسة الفنية وعمل المعاينة الهندسية على الطبيعة.",
+    "durationEn": "10 to 20 working days from the technical survey fee payment and engineering site survey.",
+    "officialUrl": "https://www.hcww.com.eg/",
+    "documents": [
+      { "nameAr": "طلب تركيب عداد مياه جديد مقدم باسم رئيس مجلس إدارة شركة المياه بالمحافظة", "nameEn": "Application form for water meter installation addressed to the regional Holding Company Chairman", "isRequired": true },
+      { "nameAr": "بطاقة الرقم القومي للمستفيد سارية وصورة منها للاطلاع والتوثيق بملف التعاقد", "nameEn": "Beneficiary's valid National ID card and a clear photocopy for the contract file", "isRequired": true },
+      { "nameAr": "عقد ملكية العقار أو الشقة (أو عقد إيجار موثق بحد أدنى سنة) وصورة ضوئية واضحة منه", "nameEn": "Property ownership title or notarized lease contract (valid for at least 1 year) + photocopy", "isRequired": true },
+      { "nameAr": "إيصال مياه مجمع للعقار بأكمله (أحدث إيصال مدفوع) أو إيصال كهرباء حديث للوحدة السكنية", "nameEn": "The building's latest joint water bill or a recent electricity bill of the residential unit", "isRequired": true },
+      { "nameAr": "موافقة الإدارة الهندسية بالحي أو الوحدة المحلية بالترخيص بالتوصيلة الخارجية والمقايسة", "nameEn": "Municipal or local engineering administration consent for outer connection and installation", "isRequired": false, "notesAr": "مطلوب لتأكد سلامة التوصيلات وتجنب مخالفات البناء العشوائي.", "notesEn": "Required to confirm connection safety and prevent building code violations." },
+      { "nameAr": "إيصال سداد رسوم المعاينة الفنية الميدانية لشركة المياه", "nameEn": "Payment receipt for the water company's technical field inspection", "isRequired": true }
+    ]
+  },
+  {
+    "id": "utilities_gas",
+    "titleAr": "توصيل الغاز الطبيعي وتركيب عداد الغاز المنزلي",
+    "titleEn": "Home Natural Gas Connection & Meter Installation",
+    "categoryAr": "شركات المرافق والخدمات",
+    "categoryEn": "Utility Services",
+    "descriptionAr": "تقديم طلب لشركات الغاز الطبيعي المعتمدة التابعة لوزارة البترول لتوصيل الغاز الطبيعي للمطبخ والحمام وتوفير عداد غاز ذكي مسبق الدفع مخصص للوحدة.",
+    "descriptionEn": "Requesting natural gas pipeline connection and smart gas meter installation for kitchens/bathrooms from authorized Ministry of Petroleum utility companies.",
+    "feesAr": "تبلغ حوالي 3000 جنيه مصري للوحدات في المناطق المدعومة من الدولة بالكامل، ويمكن تقسيطها شهرياً بضمانات مبسطة أو الدفع الفوري نقداً.",
+    "feesEn": "Approximately EGP 3000 for government-subsidized geographic sectors, with installment plans available or cash-upon-acceptance.",
+    "durationAr": "7 إلى 15 يوماً عمل لإنهاء أعمال التوصيل الداخلي والتركيب والتشغيل الفعلي بعد سداد قيمة المقايسة الفنية.",
+    "durationEn": "7 to 15 working days to complete indoor piping, safety checks, and valve activation after paying the technical assay.",
+    "officialUrl": "https://www.petrotrade.com.eg/",
+    "documents": [
+      { "nameAr": "صورة من عقد ملكية العقار أو عقد الإيجار الموثق بالشهر العقاري للوحدة السكنية مع الأصل للاطلاع", "nameEn": "Photocopy of property ownership deed or notarized lease contract + original for verification", "isRequired": true },
+      { "nameAr": "صورة بطاقة الرقم القومي للعميل المتعاقد سارية الصلاحية بالكامل", "nameEn": "Clear photocopy of the contracting customer's valid National ID card", "isRequired": true },
+      { "nameAr": "إيصال كهرباء حديث للوحدة السكنية (أصل الإيصال وصورة منه لا تزيد عن 3 أشهر)", "nameEn": "Recent original electricity bill for the residential unit (not older than 3 months) + photocopy", "isRequired": true, "notesAr": "يستخدم لإثبات جدية السكن وإتمام فحص المطابقة.", "notesEn": "Used to confirm residential occupancy and unit compatibility." },
+      { "nameAr": "استمارة طلب توصيل الغاز الطبيعي مجاناً من مقر شركة الغاز التابع لها المنطقة الجغرافية", "nameEn": "Natural gas connection application form obtained free of charge from the gas company's district branch", "isRequired": true },
+      { "nameAr": "صورة بطاقة ضامن سارية أو تفويض بنكي معتمد بالاستقطاع (مطلوب في حالة التقسيط فقط)", "nameEn": "Valid guarantor ID card copy or certified bank deduction mandate (Only required if paying via installments)", "isRequired": false }
+    ]
+  },
+  {
+    "id": "rent_notary_date",
+    "titleAr": "إثبات تاريخ عقد الإيجار بالشهر العقاري",
+    "titleEn": "Notarizing Lease Contract (Proof of Date)",
+    "categoryAr": "عقود الإيجار والتمليك",
+    "categoryEn": "Rent & Ownership Registration",
+    "descriptionAr": "توثيق عقد الإيجار السكني أو التجاري في مصلحة الشهر العقاري وإثبات تاريخه، لحفظ حقوق المؤجر والمستأجر وجعله سنداً رسمياً قابلاً للتنفيذ الجبري.",
+    "descriptionEn": "Notarizing a rental contract at the Notary Office to record an official date, preserving both landlord & tenant rights, rendering it an executive title.",
+    "feesAr": "رسوم رمزية للغاية تعادل حوالي 45 جنيهاً مصرياً شاملة طوابع الشهر العقاري والدمغات القانونية وتوثيق البيانات.",
+    "feesEn": "Highly symbolic fees of approximately EGP 45 including Notary stamps, legal duties, and data validation.",
+    "durationAr": "15 إلى 30 دقيقة داخل فرع الشهر العقاري والتوثيق التابع له العقار.",
+    "durationEn": "15 to 30 minutes inside the competent Notary Office branch.",
+    "officialUrl": "https://rern.gov.eg/",
+    "documents": [
+      { "nameAr": "أصل عقد الإيجار المكتوب المبرم بين المؤجر والمستأجر موقعاً من الطرفين بالكامل", "nameEn": "The original written rental agreement signed fully by both landlord and tenant", "isRequired": true },
+      { "nameAr": "بطاقة الرقم القومي سارية الصلاحية لصاحب طلب التوثيق (أحد طرفي العقد: المؤجر أو المستأجر)", "nameEn": "Valid National ID card of the applicant (either the landlord or the tenant)", "isRequired": true },
+      { "nameAr": "صورة واضحة من بطاقات الطرف الآخر بالكامل وصورة من عقد الملكية الأصلي للعين المؤجرة", "nameEn": "Copy of the other party's National ID + copy of the original property title", "isRequired": true },
+      { "nameAr": "سداد الرسوم المقررة بالفيزا كارد أو نقداً وإرفاق إيصال السداد الورقي داخل الملف الموثق", "nameEn": "Receipt of Notary fee payment paid via debit/credit card or cash", "isRequired": true }
+    ]
+  },
+  {
+    "id": "ownership_sale_contract",
+    "titleAr": "توثيق عقد البيع النهائي لشقة أو عقار بالشهر العقاري",
+    "titleEn": "Notarizing Final Property Sale Contract",
+    "categoryAr": "عقود الإيجار والتمليك",
+    "categoryEn": "Rent & Ownership Registration",
+    "descriptionAr": "الإجراءات الرسمية لتوثيق وتسجيل عقد البيع النهائي للعقارات والشقق ونقل الملكية بصفة قطعية بالشهر العقاري لضمان الحماية القانونية التامة ضد النزاعات.",
+    "descriptionEn": "Official procedures to register and notarize a final real estate sale contract at the Notary Office, transferring absolute property title to prevent ownership disputes.",
+    "feesAr": "رسم نسبي يتحدد حسب مساحة العقار بحد أقصى 3900 جنيه، بالإضافة لرسوم الرفع المساحي ونسبة 1% لنقابة المحامين للتصديق، و2.5% ضريبة تصرفات عقارية يتحملها البائع قانوناً.",
+    "feesEn": "Registration fee capped at EGP 3900 max, plus digital survey fees, 1% bar association contract validation, and 2.5% real estate disposal tax legally payable by the seller.",
+    "durationAr": "15 إلى 30 يوماً عمل لإصدار قرار التسجيل النهائي ونقل ملكية العقار رسمياً بسجلات الدولة.",
+    "durationEn": "15 to 30 working days to receive final registration approval and update national land records.",
+    "officialUrl": "https://rern.gov.eg/",
+    "documents": [
+      { "nameAr": "أصل عقد البيع النهائي المبرم بين البائع والمشتري والمذيل بتوقيعات الطرفين وشهود العقد", "nameEn": "Original final sale contract signed by both seller and buyer, witnessed fully", "isRequired": true },
+      { "nameAr": "سند ملكية البائع الأصلي (عقد تسجيل الملكية المشهر للبائع السابق بالتسجيل التراكمي)", "nameEn": "The seller's registered property deed (notarized in Notary archives) to prove absolute chain of title", "isRequired": true },
+      { "nameAr": "بيان الرفع المساحي الرقمي الصادر من الجهات المساحية المعتمدة موضحاً فيه إحداثيات الوحدة بدقة", "nameEn": "Digital land survey report (Raf' Masahy) with precise global coordinates of the property", "isRequired": true },
+      { "nameAr": "أصل بطاقات الرقم القومي للبائع والمشتري سارية وصور ضوئية واضحة منها", "nameEn": "Original valid National ID cards of both seller and buyer + photocopies", "isRequired": true },
+      { "nameAr": "كشف رسمي سداد الضريبة العقارية (شهادة سلبية عقارية خالية من المديونيات لعام 2026)", "nameEn": "Official Real Estate Tax payment status statement showing no pending tax liability for 2026", "isRequired": true },
+      { "nameAr": "توكيل رسمي بالبيع للنفس وللغير (مطلوب فقط في حالة كان البيع يتم بموجب توكيل رسمي صادر من البائع الأصلي)", "nameEn": "Official Power of Attorney for selling to oneself or others (Only required if transaction is executed via a notary power of attorney)", "isRequired": false }
+    ]
+  }
+]

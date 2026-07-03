@@ -1,0 +1,307 @@
+{
+  "metroLines": [
+    {
+      "id": "line1",
+      "nameAr": "الخط الأول (حلوان - المرج)",
+      "nameEn": "Line 1 (Helwan - El-Marg)",
+      "type": "metro",
+      "color": "#3b82f6",
+      "stations": [
+        { "id": "l1_1", "nameAr": "حلوان", "nameEn": "Helwan" },
+        { "id": "l1_2", "nameAr": "عين حلوان", "nameEn": "Ain Helwan" },
+        { "id": "l1_3", "nameAr": "جامعة حلوان", "nameEn": "Helwan University" },
+        { "id": "l1_4", "nameAr": "وادي حوف", "nameEn": "Wadi Hof" },
+        { "id": "l1_5", "nameAr": "حدائق حلوان", "nameEn": "Hadayek Helwan" },
+        { "id": "l1_6", "nameAr": "المعصرة", "nameEn": "El-Maasara" },
+        { "id": "l1_7", "nameAr": "طرة الأسمنت", "nameEn": "Tora El-Asmant" },
+        { "id": "l1_8", "nameAr": "كوتسيكا", "nameEn": "Kotsika" },
+        { "id": "l1_9", "nameAr": "طرة البلد", "nameEn": "Tora El-Balad" },
+        { "id": "l1_10", "nameAr": "ثكنات المعادي", "nameEn": "Sakanat El-Maadi" },
+        { "id": "l1_11", "nameAr": "المعادي", "nameEn": "El-Maadi" },
+        { "id": "l1_12", "nameAr": "حدائق المعادي", "nameEn": "Hadayek El-Maadi" },
+        { "id": "l1_13", "nameAr": "دار السلام", "nameEn": "Dar El-Salam" },
+        { "id": "l1_14", "nameAr": "الزهراء", "nameEn": "El-Zahraa" },
+        { "id": "l1_15", "nameAr": "مار جرجس", "nameEn": "Mar Girgis" },
+        { "id": "l1_16", "nameAr": "الملك الصالح", "nameEn": "El-Malek El-Saleh" },
+        { "id": "l1_17", "nameAr": "السيدة زينب", "nameEn": "Sayeda Zeinab" },
+        { "id": "l1_18", "nameAr": "سعد زغلول", "nameEn": "Saad Zaghloul" },
+        { "id": "l1_19", "nameAr": "السادات", "nameEn": "Sadat" },
+        { "id": "l1_20", "nameAr": "جمال عبد الناصر", "nameEn": "Nasser" },
+        { "id": "l1_21", "nameAr": "أحمد عرابي", "nameEn": "Orabi" },
+        { "id": "l1_22", "nameAr": "الشهداء", "nameEn": "Al-Shohadaa" },
+        { "id": "l1_23", "nameAr": "غمرة", "nameEn": "Ghamra" },
+        { "id": "l1_24", "nameAr": "الدمرداش", "nameEn": "El-Demerdash" },
+        { "id": "l1_25", "nameAr": "منشية الصدر", "nameEn": "Manshiet El-Sadr" },
+        { "id": "l1_26", "nameAr": "كوبري القبة", "nameEn": "Kobri El-Qobba" },
+        { "id": "l1_27", "nameAr": "حمامات القبة", "nameEn": "Hammamat El-Qobba" },
+        { "id": "l1_28", "nameAr": "سراي القبة", "nameEn": "Saray El-Qobba" },
+        { "id": "l1_29", "nameAr": "حدائق الزيتون", "nameEn": "Hadaq El-Zaitoun" },
+        { "id": "l1_30", "nameAr": "حلمية الزيتون", "nameEn": "Helmiet El-Zaitoun" },
+        { "id": "l1_31", "nameAr": "المطرية", "nameEn": "El-Matareya" },
+        { "id": "l1_32", "nameAr": "عين شمس", "nameEn": "Ain Shams" },
+        { "id": "l1_33", "nameAr": "عزبة النخل", "nameEn": "Ezbet El-Nakhl" },
+        { "id": "l1_34", "nameAr": "المرج", "nameEn": "El-Marg" },
+        { "id": "l1_35", "nameAr": "المرج الجديدة", "nameEn": "El-Marg El-Jedida" }
+      ]
+    },
+    {
+      "id": "line2",
+      "nameAr": "الخط الثاني (شبرا - المنيب)",
+      "nameEn": "Line 2 (Shubra - El-Mounib)",
+      "type": "metro",
+      "color": "#10b981",
+      "stations": [
+        { "id": "l2_1", "nameAr": "شبرا الخيمة", "nameEn": "Shubra El-Kheima" },
+        { "id": "l2_2", "nameAr": "كلية الزراعة", "nameEn": "Kolleyet El-Ziraah" },
+        { "id": "l2_3", "nameAr": "المظلات", "nameEn": "El-Mezallat" },
+        { "id": "l2_4", "nameAr": "الخلفاوي", "nameEn": "El-Khalafawy" },
+        { "id": "l2_5", "nameAr": "سانت تريزا", "nameEn": "St. Teresa" },
+        { "id": "l2_6", "nameAr": "روض الفرج", "nameEn": "Rod El-Farag" },
+        { "id": "l2_7", "nameAr": "مسرة", "nameEn": "Massara" },
+        { "id": "l2_8", "nameAr": "الشهداء", "nameEn": "Al-Shohadaa" },
+        { "id": "l2_9", "nameAr": "العتبة", "nameEn": "Attaba" },
+        { "id": "l2_10", "nameAr": "محمد نجيب", "nameEn": "Mohamed Naguib" },
+        { "id": "l2_11", "nameAr": "السادات", "nameEn": "Sadat" },
+        { "id": "l2_12", "nameAr": "الأوبرا", "nameEn": "Opera" },
+        { "id": "l2_13", "nameAr": "الدقي", "nameEn": "Dokki" },
+        { "id": "l2_14", "nameAr": "البحوث", "nameEn": "El-Bohouth" },
+        { "id": "l2_15", "nameAr": "جامعة القاهرة", "nameEn": "Cairo University" },
+        { "id": "l2_16", "nameAr": "فيصل", "nameEn": "Faisal" },
+        { "id": "l2_17", "nameAr": "الجيزة", "nameEn": "Giza" },
+        { "id": "l2_18", "nameAr": "أم المصريين", "nameEn": "Omm El-Masryeen" },
+        { "id": "l2_19", "nameAr": "ساقية مكي", "nameEn": "Sakiat Mekky" },
+        { "id": "l2_20", "nameAr": "المنيب", "nameEn": "El-Mounib" }
+      ]
+    },
+    {
+      "id": "line3",
+      "nameAr": "الخط الثالث (عدلي منصور - الكيت كات - جامعة القاهرة / محور روض الفرج)",
+      "nameEn": "Line 3 (Adly Mansour - Kit Kat - Cairo Univ / Rod El-Farag)",
+      "type": "metro",
+      "color": "#06b6d4",
+      "stations": [
+        { "id": "l3_1", "nameAr": "عدلي منصور", "nameEn": "Adly Mansour" },
+        { "id": "l3_2", "nameAr": "الهايكستب", "nameEn": "El-Hikestep" },
+        { "id": "l3_3", "nameAr": "عمر بن الخطاب", "nameEn": "Omar Ibn El-Khattab" },
+        { "id": "l3_4", "nameAr": "قباء", "nameEn": "Qobaa" },
+        { "id": "l3_5", "nameAr": "هشام بركات", "nameEn": "Hesham Barakat" },
+        { "id": "l3_6", "nameAr": "النزهة", "nameEn": "El-Nozha" },
+        { "id": "l3_7", "nameAr": "نادي الشمس", "nameEn": "El-Shams Club" },
+        { "id": "l3_8", "nameAr": "ألف مسكن", "nameEn": "Alf Masken" },
+        { "id": "l3_9", "nameAr": "ميدان هليوبوليس", "nameEn": "Heliopolis Square" },
+        { "id": "l3_10", "nameAr": "هارون", "nameEn": "Haroun" },
+        { "id": "l3_11", "nameAr": "الأهرام", "nameEn": "Al-Ahram" },
+        { "id": "l3_12", "nameAr": "كلية البنات", "nameEn": "Koleyet El-Banat" },
+        { "id": "l3_13", "nameAr": "الاستاد", "nameEn": "Stadium" },
+        { "id": "l3_14", "nameAr": "أرض المعارض", "nameEn": "Fair Zone" },
+        { "id": "l3_15", "nameAr": "العباسية", "nameEn": "Abbassia" },
+        { "id": "l3_16", "nameAr": "عبده باشا", "nameEn": "Abdou Pasha" },
+        { "id": "l3_17", "nameAr": "الجيش", "nameEn": "El-Geish" },
+        { "id": "l3_18", "nameAr": "باب الشعرية", "nameEn": "Bab El-Shaariya" },
+        { "id": "l3_19", "nameAr": "العتبة", "nameEn": "Attaba" },
+        { "id": "l3_20", "nameAr": "جمال عبد الناصر", "nameEn": "Nasser" },
+        { "id": "l3_21", "nameAr": "ماسبيرو", "nameEn": "Maspero" },
+        { "id": "l3_22", "nameAr": "صفاء حجازي", "nameEn": "Safaa Hegazy" },
+        { "id": "l3_23", "nameAr": "الكيت كات", "nameEn": "Kit Kat" },
+        { "id": "l3_b1_1", "nameAr": "السودان", "nameEn": "Sudan" },
+        { "id": "l3_b1_2", "nameAr": "إمبابة", "nameEn": "Imbaba" },
+        { "id": "l3_b1_3", "nameAr": "البوهي", "nameEn": "El-Bohi" },
+        { "id": "l3_b1_4", "nameAr": "القومية العربية", "nameEn": "El-Qowmeya El-Arabiya" },
+        { "id": "l3_b1_5", "nameAr": "الطريق الدائري", "nameEn": "Ring Road" },
+        { "id": "l3_b1_6", "nameAr": "محور روض الفرج", "nameEn": "Rod El-Farag Axis" },
+        { "id": "l3_b2_1", "nameAr": "التوفيقية", "nameEn": "El-Tawfikia" },
+        { "id": "l3_b2_2", "nameAr": "وادي النيل", "nameEn": "Wadi El-Nile" },
+        { "id": "l3_b2_3", "nameAr": "جامعة الدول العربية", "nameEn": "League of Arab States" },
+        { "id": "l3_b2_4", "nameAr": "بولاق الدكرور", "nameEn": "Bulaq El-Dakrour" },
+        { "id": "l3_b2_5", "nameAr": "جامعة القاهرة", "nameEn": "Cairo University" }
+      ]
+    },
+    {
+      "id": "line4",
+      "nameAr": "الخط الرابع بالكامل (حدائق الأشجار - الرحاب)",
+      "nameEn": "Line 4 Complete (Hadayek El-Ashgar - El-Rehab)",
+      "type": "metro",
+      "color": "#f59e0b",
+      "stations": [
+        { "id": "l4_1", "nameAr": "حدائق الأشجار", "nameEn": "Hadayek El-Ashgar" },
+        { "id": "l4_2", "nameAr": "حدائق الأهرام", "nameEn": "Hadayek El-Ahram" },
+        { "id": "l4_3", "nameAr": "النصر", "nameEn": "El-Nasr" },
+        { "id": "l4_4", "nameAr": "المتحف المصري الكبير", "nameEn": "Grand Egyptian Museum" },
+        { "id": "l4_5", "nameAr": "ميدان الرماية", "nameEn": "Remayah Square" },
+        { "id": "l4_6", "nameAr": "الأهرام", "nameEn": "El-Ahram" },
+        { "id": "l4_7", "nameAr": "المريوطية", "nameEn": "El-Maryoutia" },
+        { "id": "l4_8", "nameAr": "العريش", "nameEn": "El-Arish" },
+        { "id": "l4_9", "nameAr": "المطبعة", "nameEn": "El-Matbaa" },
+        { "id": "l4_10", "nameAr": "الجيزة", "nameEn": "El-Giza" },
+        { "id": "l4_11", "nameAr": "ميدان الجيزة", "nameEn": "Giza Square" },
+        { "id": "l4_12", "nameAr": "الروضة", "nameEn": "El-Roda" },
+        { "id": "l4_13", "nameAr": "الملك الصالح", "nameEn": "El-Malek El-Saleh" },
+        { "id": "l4_14", "nameAr": "الفسطاط", "nameEn": "El-Fustat" },
+        { "id": "l4_15", "nameAr": "مجرى العيون", "nameEn": "Magra El-Oyoun" },
+        { "id": "l4_16", "nameAr": "قلعة صلاح الدين", "nameEn": "Salah El-Din Citadel" },
+        { "id": "l4_17", "nameAr": "صلاح سالم", "nameEn": "Salah Salem" },
+        { "id": "l4_18", "nameAr": "الفردوس", "nameEn": "El-Fardous" },
+        { "id": "l4_19", "nameAr": "منشية ناصر", "nameEn": "Manshiet Nasser" },
+        { "id": "l4_20", "nameAr": "الدويقة", "nameEn": "El-Deweika" },
+        { "id": "l4_21", "nameAr": "العرب", "nameEn": "El-Arab" },
+        { "id": "l4_22", "nameAr": "نادي السكة الحديد", "nameEn": "El-Sikka El-Hadid Club" },
+        { "id": "l4_23", "nameAr": "الحزام الأخضر", "nameEn": "El-Hezam El-Ahdar" },
+        { "id": "l4_24", "nameAr": "جامعة الأزهر", "nameEn": "Al-Azhar University" },
+        { "id": "l4_25", "nameAr": "الطيران", "nameEn": "Al-Tayaran" },
+        { "id": "l4_26", "nameAr": "عباس العقاد", "nameEn": "Abbas El-Akkad" },
+        { "id": "l4_27", "nameAr": "مكرم عبيد", "nameEn": "Makram Ebeid" },
+        { "id": "l4_28", "nameAr": "حسن المأمون", "nameEn": "Hassan El-Maamoun" },
+        { "id": "l4_29", "nameAr": "الميثاق", "nameEn": "El-Mithaq" },
+        { "id": "l4_30", "nameAr": "أكاديمية الشرطة", "nameEn": "Police Academy" },
+        { "id": "l4_31", "nameAr": "الياسمين", "nameEn": "El-Yasmine" },
+        { "id": "l4_32", "nameAr": "البنفسج", "nameEn": "El-Banafseg" },
+        { "id": "l4_33", "nameAr": "الرحاب", "nameEn": "El-Rehab" }
+      ]
+    }
+  ],
+  "ticketPricing": {
+    "year": "2026",
+    "tiers": [
+      { "id": "tier1", "minStations": 1, "maxStations": 9, "price": 8, "descriptionAr": "منطقة واحدة (من 1 إلى 9 محطات)", "descriptionEn": "1 Zone (1 - 9 Stations)" },
+      { "id": "tier2", "minStations": 10, "maxStations": 16, "price": 10, "descriptionAr": "منطقتان (من 10 إلى 16 محطة)", "descriptionEn": "2 Zones (10 - 16 Stations)" },
+      { "id": "tier3", "minStations": 17, "maxStations": 23, "price": 15, "descriptionAr": "ثلاث مناطق (من 17 إلى 23 محطة)", "descriptionEn": "3 Zones (17 - 23 Stations)" },
+      { "id": "tier4", "minStations": 24, "maxStations": 39, "price": 20, "descriptionAr": "أربع مناطق (من 24 إلى 39 محطة)", "descriptionEn": "4 Zones (24 - 39 Stations)" },
+      { "id": "tier5", "minStations": 40, "maxStations": 999, "price": 25, "descriptionAr": "أكثر من 39 محطة", "descriptionEn": "More than 39 Stations" }
+    ]
+  },
+  "subscriptions": [
+    {
+      "categoryAr": "الاشتراكات العادية (الجمهور العام)",
+      "categoryEn": "Standard Subscriptions (General Public)",
+      "types": [
+        {
+          "nameAr": "الاشتراك الشهري العادي (60 رحلة)",
+          "nameEn": "Standard Monthly (60 Trips)",
+          "durationAr": "شهر واحد",
+          "durationEn": "1 Month",
+          "zones": [
+            { "nameAr": "منطقة واحدة (9 محطات)", "nameEn": "1 Zone (9 Stations)", "price": 310 },
+            { "nameAr": "منطقتان (16 محطة)", "nameEn": "2 Zones (16 Stations)", "price": 365 },
+            { "nameAr": "ثلاث مناطق (23 محطة)", "nameEn": "3 Zones (23 Stations)", "price": 430 },
+            { "nameAr": "أكثر من ثلاث مناطق", "nameEn": "More than 3 Zones", "price": 500 }
+          ],
+          "detailsAr": "صالح لمدة شهر واحد أو 60 رحلة أيهما أقرب. يوفر خصماً يصل إلى 35% مقارنة بالتذاكر العادية.",
+          "detailsEn": "Valid for 1 month or 60 trips, whichever comes first. Offers up to 35% discount compared to single-ride tickets."
+        },
+        {
+          "nameAr": "الاشتراك ربع السنوي العادي (180 رحلة)",
+          "nameEn": "Standard Quarterly (180 Trips)",
+          "durationAr": "3 أشهر",
+          "durationEn": "3 Months",
+          "zones": [
+            { "nameAr": "منطقة واحدة (9 محطات)", "nameEn": "1 Zone (9 Stations)", "price": 830 },
+            { "nameAr": "منطقتان (16 محطة)", "nameEn": "2 Zones (16 Stations)", "price": 990 },
+            { "nameAr": "ثلاث مناطق (23 محطة)", "nameEn": "3 Zones (23 Stations)", "price": 1250 },
+            { "nameAr": "أكثر من ثلاث مناطق", "nameEn": "More than 3 Zones", "price": 1370 }
+          ],
+          "detailsAr": "صالح لمدة 3 أشهر أو 180 رحلة أيهما أقرب. يوفر خصماً يصل إلى 40%.",
+          "detailsEn": "Valid for 3 months or 180 trips, whichever comes first. Offers up to 40% discount."
+        },
+        {
+          "nameAr": "الاشتراك السنوي العادي (730 رحلة)",
+          "nameEn": "Standard Annual (730 Trips)",
+          "durationAr": "12 شهراً",
+          "durationEn": "12 Months",
+          "zones": [
+            { "nameAr": "خطين", "nameEn": "2 Lines", "price": 4235 },
+            { "nameAr": "ثلاثة خطوط", "nameEn": "3 Lines", "price": 5300 }
+          ],
+          "detailsAr": "صالح لمدة عام كامل (12 شهراً) أو 730 رحلة أيهما أقرب. متوفر للاشتراك على خطين أو ثلاثة خطوط من شبكة مترو القاهرة.",
+          "detailsEn": "Valid for a full year (12 months) or 730 trips, whichever comes first. Available for 2 lines or 3 lines of the Cairo Metro network."
+        }
+      ]
+    },
+    {
+      "categoryAr": "الاشتراكات المدعمة (الطلاب والتعليم)",
+      "categoryEn": "Subsidized Subscriptions (Students)",
+      "types": [
+        {
+          "nameAr": "اشتراك الطلاب ربع السنوي (180 رحلة)",
+          "nameEn": "Student Quarterly (180 Trips)",
+          "durationAr": "3 أشهر",
+          "durationEn": "3 Months",
+          "zones": [
+            { "nameAr": "حتى 25 محطة", "nameEn": "Up to 25 Stations", "price": 33 },
+            { "nameAr": "أكثر من 25 محطة", "nameEn": "More than 25 Stations", "price": 41 }
+          ],
+          "detailsAr": "دعم حكومي هائل يصل إلى 95%. متاح لجميع طلبة المدارس والجامعات والمعاهد المعتمدة بموجب استمارة اشتراك معتمدة من الجهة التعليمية.",
+          "detailsEn": "Gigantic government subsidy of up to 95%. Available to all students of schools, universities, and accredited institutions with an authorized form."
+        }
+      ]
+    },
+    {
+      "categoryAr": "اشتراكات كبار السن والمتقاعدين",
+      "categoryEn": "Senior Citizens Subscriptions",
+      "types": [
+        {
+          "nameAr": "اشتراك كبار السن (60 إلى 70 عاماً) ربع سنوي",
+          "nameEn": "Seniors (60-70 Years) Quarterly",
+          "durationAr": "3 أشهر",
+          "durationEn": "3 Months",
+          "zones": [
+            { "nameAr": "منطقة واحدة (9 محطات)", "nameEn": "1 Zone (9 Stations)", "price": 155 },
+            { "nameAr": "منطقتان (16 محطة)", "nameEn": "2 Zones (16 Stations)", "price": 195 },
+            { "nameAr": "ثلاث مناطق (23 محطة)", "nameEn": "3 Zones (23 Stations)", "price": 230 },
+            { "nameAr": "أكثر من ثلاث مناطق", "nameEn": "More than 3 Zones", "price": 295 }
+          ],
+          "detailsAr": "خصم بنسبة 50% على اشتراكات الجمهور العادي للمواطنين فوق سن الستين بموجب بطاقة الرقم القومي.",
+          "detailsEn": "50% discount on standard rates for citizens aged 60-70, available upon presenting their National ID."
+        },
+        {
+          "nameAr": "اشتراك كبار السن فوق 70 عاماً المجاني",
+          "nameEn": "Seniors (70+ Years) Free Travel",
+          "durationAr": "مستمر",
+          "durationEn": "Continuous",
+          "zones": [
+            { "nameAr": "جميع الخطوط والمحطات", "nameEn": "All Lines & Stations", "price": 0 }
+          ],
+          "detailsAr": "يركب كبار السن فوق الـ 70 عاماً مجاناً تماماً بموجب بطاقة الرقم القومي في جميع المحطات والخطوط.",
+          "detailsEn": "Seniors over 70 years old travel completely free across all lines upon presenting their National ID card at the ticket gates."
+        }
+      ]
+    },
+    {
+      "categoryAr": "اشتراكات ذوي الهمم والاحتياجات الخاصة",
+      "categoryEn": "People of Determination Subscriptions",
+      "types": [
+        {
+          "nameAr": "اشتراك ذوي الهمم ربع السنوي (180 رحلة)",
+          "nameEn": "Disabled Citizens Quarterly (180 Trips)",
+          "durationAr": "3 أشهر",
+          "durationEn": "3 Months",
+          "zones": [
+            { "nameAr": "جميع الخطوط والمحطات (حتى 39 محطة)", "nameEn": "All Lines & Stations (Up to 39 Stations)", "price": 22 },
+            { "nameAr": "جميع الخطوط والمحطات (أكثر من 39 محطة)", "nameEn": "All Lines & Stations (More than 39 Stations)", "price": 27 }
+          ],
+          "detailsAr": "اشتراك مدعم بشكل كبير لتيسير حركة ذوي الهمم والاحتياجات الخاصة ومرافقيهم.",
+          "detailsEn": "Heavily subsidized subscription to facilitate movement for people of determination and their guides."
+        }
+      ]
+    },
+    {
+      "categoryAr": "اشتراكات مصابي حرب وأسر الشهداء",
+      "categoryEn": "War Casualties & Martyrs Families Subscriptions",
+      "types": [
+        {
+          "nameAr": "اشتراك مصابي وأسر الشهداء ربع سنوي",
+          "nameEn": "Martyrs Families & War Injured Quarterly",
+          "durationAr": "3 أشهر",
+          "durationEn": "3 Months",
+          "zones": [
+            { "nameAr": "منطقة واحدة (9 محطات)", "nameEn": "1 Zone (9 Stations)", "price": 310 },
+            { "nameAr": "منطقتان (16 محطة)", "nameEn": "2 Zones (16 Stations)", "price": 365 },
+            { "nameAr": "ثلاث مناطق (23 محطة)", "nameEn": "3 Zones (23 Stations)", "price": 430 },
+            { "nameAr": "أكثر من ثلاث مناطق", "nameEn": "More than 3 Zones", "price": 500 }
+          ],
+          "detailsAr": "اشتراكات بأسعار مخفضة مخصصة للفئات المعتمدة من الجهات المختصة.",
+          "detailsEn": "Discounted rates for qualified military injured, police injured, and martyrs families."
+        }
+      ]
+    }
+  ]
+}

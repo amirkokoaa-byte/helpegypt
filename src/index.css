@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Cinzel:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-pharaonic: "Cinzel", "Georgia", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-gold-50: #fbf8f0;
+  --color-gold-100: #f5edda;
+  --color-gold-200: #ebdbb5;
+  --color-gold-300: #dcbe83;
+  --color-gold-400: #c99c53;
+  --color-gold-500: #b57e31;
+  --color-gold-600: #a56926;
+  --color-gold-700: #86501f;
+  --color-gold-800: #6d401e;
+  --color-gold-900: #5a351b;
+  --color-gold-950: #331c0e;
+
+  --color-royal-50: #f0f3fa;
+  --color-royal-100: #dfe6f3;
+  --color-royal-200: #c5d3eb;
+  --color-royal-300: #9cb5de;
+  --color-royal-400: #6c91cc;
+  --color-royal-500: #496fba;
+  --color-royal-600: #3654a1;
+  --color-royal-700: #2d4382;
+  --color-royal-800: #27386c;
+  --color-royal-900: #212e59;
+  --color-royal-950: #0a0e1c;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(10, 14, 28, 0.4);
+}
+::-webkit-scrollbar-thumb {
+  background: #c99c53;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #dcbe83;
+}
+
+/* Glass-morphism Utility */
+.glass-panel {
+  background: rgba(10, 14, 28, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(197, 160, 89, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+}
+
+.glass-panel-light {
+  background: rgba(10, 14, 28, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(197, 160, 89, 0.15);
+}
+
+.gold-glow {
+  text-shadow: 0 0 10px rgba(197, 160, 89, 0.6), 0 0 20px rgba(197, 160, 89, 0.3);
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 15px rgba(197, 160, 89, 0.2);
+}
+
+/* Custom Pharaonic Patterns & Borders */
+.hieroglyph-pattern {
+  background-image: radial-gradient(rgba(197, 160, 89, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Animation for the floating sun disk */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}

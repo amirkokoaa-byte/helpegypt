@@ -1,0 +1,6 @@
+{
+  "name": "Egyptian Services & Transportation Hub",
+  "description": "An interactive, modern Pharaonic-themed application providing a real-time transportation route calculator, complete telecom USSD codes & plans, official Egyptian government document checklists, a comprehensive Egypt Post directory, and live currency exchange rates with top bank directories updated for 2026.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
