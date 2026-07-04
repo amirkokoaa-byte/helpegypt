@@ -6,9 +6,10 @@ interface HeaderProps {
   appNameAr: string;
   appNameEn: string;
   onOpenSettings: () => void;
+  onClickHome?: () => void;
 }
 
-export default function Header({ lang, appNameAr, appNameEn, onOpenSettings }: HeaderProps) {
+export default function Header({ lang, appNameAr, appNameEn, onOpenSettings, onClickHome }: HeaderProps) {
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {
@@ -46,7 +47,10 @@ export default function Header({ lang, appNameAr, appNameEn, onOpenSettings }: H
       <div className="absolute -left-24 -bottom-24 w-48 h-48 rounded-full bg-gradient-to-tr from-gold-600/10 to-transparent blur-3xl pointer-events-none"></div>
 
       {/* Title & Portal Indicator */}
-      <div className="flex items-center gap-4">
+      <div 
+        onClick={onClickHome}
+        className="flex items-center gap-4 cursor-pointer hover:opacity-90 transition-all"
+      >
         <div className="p-3 rounded-lg bg-gold-500/10 border border-gold-400/30 flex items-center justify-center text-gold-400">
           <Crown className="w-6 h-6 filter drop-shadow-[0_0_3px_rgba(197,160,89,0.4)]" />
         </div>

@@ -67,6 +67,7 @@ interface SidebarProps {
   appNameAr: string;
   appNameEn: string;
   onOpenSettings: () => void;
+  onlineUsersOverride?: string;
 }
 
 export default function Sidebar({
@@ -86,10 +87,15 @@ export default function Sidebar({
   setSelectedHospitalId,
   appNameAr,
   appNameEn,
-  onOpenSettings
+  onOpenSettings,
+  onlineUsersOverride
 }: SidebarProps) {
   const [isOpen, setIsOpen] = useState(true);
   const [liveUsers, setLiveUsers] = useState<number>(1);
+
+  const displayedLiveUsers = (onlineUsersOverride && !isNaN(Number(onlineUsersOverride)) && onlineUsersOverride.trim() !== '') 
+    ? Number(onlineUsersOverride) 
+    : liveUsers;
 
   useEffect(() => {
     const socket = io(window.location.origin, {
@@ -301,7 +307,10 @@ export default function Sidebar({
         } md:relative md:left-0 md:w-72 flex flex-col h-full glass-panel border-r border-gold-500/20`}
       >
         {/* Brand Header */}
-        <div className="p-5 border-b border-gold-500/20 relative overflow-hidden flex flex-col items-center justify-center">
+        <div 
+          onClick={() => handleSelectModule('transport-calc')}
+          className="p-5 border-b border-gold-500/20 relative overflow-hidden flex flex-col items-center justify-center cursor-pointer hover:bg-royal-950/20 transition-all"
+        >
           <div className="absolute top-0 right-0 left-0 h-1 bg-gradient-to-r from-royal-950 via-gold-400 to-royal-950"></div>
           
           {/* Decorative Pharaonic Winged Sun */}
@@ -956,47 +965,7 @@ export default function Sidebar({
             </button>
           </div>
 
-          {/* Module 4: Scraper Script & dev tools */}
-          <div className="space-y-1">
-            <button
-              onClick={() => {
-                toggleMenu('dev');
-                handleSelectModule('scraper-script');
-              }}
-              className="w-full flex items-center justify-between p-2.5 rounded-lg text-gold-200 hover:text-gold-100 hover:bg-royal-800/50 transition-all duration-150 cursor-pointer"
-            >
-              <div className="flex items-center gap-3">
-                <Terminal className="w-5 h-5 text-gold-400" />
-                <span className="font-semibold text-sm">{menuItems.dev.title}</span>
-              </div>
-              {openMenus.dev ? <ChevronDown className="w-4 h-4 text-gold-500" /> : <ChevronRight className="w-4 h-4 text-gold-500" />}
-            </button>
-            
-            <AnimatePresence>
-              {openMenus.dev && (
-                <motion.div
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: 'auto', opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
-                  transition={{ duration: 0.2 }}
-                  className="overflow-hidden pl-4 pr-1 mt-1 space-y-1 border-l-2 border-gold-500/10"
-                >
-                  <button
-                    onClick={() => {
-                      handleSelectModule('scraper-script');
-                    }}
-                    className={`w-full text-right ${!isAr && 'text-left'} py-2 px-3 rounded text-xs transition-all duration-150 ${
-                      currentModule === 'scraper-script' 
-                        ? 'bg-gold-500/20 text-gold-300 border border-gold-400/30' 
-                        : 'text-gray-400 hover:text-gold-300 hover:bg-royal-800/30'
-                    } cursor-pointer`}
-                  >
-                    {menuItems.dev.script}
-                  </button>
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
+          {/* Module 4: Dev Section Removed */}
 
         </div>
 
@@ -1016,7 +985,7 @@ export default function Sidebar({
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
               </span>
               <span className="text-xs font-bold text-emerald-400 font-mono tracking-wider">
-                {liveUsers}
+                {displayedLiveUsers}
               </span>
             </div>
           </div>

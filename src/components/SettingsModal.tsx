@@ -46,6 +46,10 @@ interface SettingsModalProps {
 
   // Reset
   onResetAll: () => void;
+
+  // Online users override
+  onlineUsersOverride: string;
+  onSaveOnlineUsersOverride: (val: string) => void;
 }
 
 export default function SettingsModal({
@@ -65,7 +69,9 @@ export default function SettingsModal({
   metroSubscriptions,
   onSaveSubscriptions,
   firebaseStatus = 'disconnected',
-  onResetAll
+  onResetAll,
+  onlineUsersOverride,
+  onSaveOnlineUsersOverride
 }: SettingsModalProps) {
   const isAr = lang === 'ar';
 
@@ -73,6 +79,9 @@ export default function SettingsModal({
   const [password, setPassword] = useState('');
   const [isAuthorized, setIsAuthorized] = useState(false);
   const [authError, setAuthError] = useState('');
+
+  // Online Users Override State
+  const [tempOnlineUsersOverride, setTempOnlineUsersOverride] = useState(onlineUsersOverride);
 
   // Active Tab
   const [activeTab, setActiveTab] = useState<'name' | 'pricing' | 'stations' | 'subscriptions' | 'firebase'>('name');
@@ -109,6 +118,7 @@ export default function SettingsModal({
       setTempAppNameEn(appNameEn);
       setTempPricing(JSON.parse(JSON.stringify(pricing)));
       setTempSubscriptions(JSON.parse(JSON.stringify(metroSubscriptions)));
+      setTempOnlineUsersOverride(onlineUsersOverride);
       setAuthError('');
       setStationSuccess('');
       // Do not reset authorized so they don't have to re-enter password if they close & reopen in same view
@@ -135,7 +145,7 @@ export default function SettingsModal({
         setFbMeasurementId('');
       }
     }
-  }, [isOpen, appNameAr, appNameEn, pricing, metroSubscriptions]);
+  }, [isOpen, appNameAr, appNameEn, pricing, metroSubscriptions, onlineUsersOverride]);
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
@@ -242,8 +252,8 @@ export default function SettingsModal({
               </h3>
               <p className="text-xs text-gray-400 max-w-xs">
                 {isAr 
-                  ? 'يرجى إدخال رمز المرور (الباسورد الافتراضي هو 0000) لتعديل إعدادات البوابة والتعريفات.' 
-                  : 'Please enter the passcode (Default is 0000) to customize system properties & tariffs.'}
+                  ? 'يرجى إدخال رمز المرور لتعديل إعدادات البوابة والتعريفات.' 
+                  : 'Please enter the passcode to customize system properties & tariffs.'}
               </p>
             </div>
 
@@ -251,7 +261,7 @@ export default function SettingsModal({
               <div>
                 <input
                   type="password"
-                  placeholder={isAr ? 'رمز المرور (0000)' : 'Passcode (0000)'}
+                  placeholder={isAr ? 'رمز المرور' : 'Passcode'}
                   value={password}
                   onChange={(e) => {
                     setPassword(e.target.value);
@@ -447,6 +457,42 @@ export default function SettingsModal({
                       >
                         <Check className="w-4 h-4" />
                         <span>{isAr ? 'حفظ اسم البرنامج' : 'Save App Title'}</span>
+                      </button>
+                    </div>
+
+                    {/* Live Counter Override Section */}
+                    <div className="pt-6 border-t border-gold-500/10 space-y-4 mt-6">
+                      <div className="p-4 rounded-lg bg-emerald-500/5 border border-emerald-500/10">
+                        <h4 className="text-sm font-bold text-emerald-300 mb-1">
+                          {isAr ? 'التحكم في عداد المتواجدين الآن' : 'Control Live Visitors Counter'}
+                        </h4>
+                        <p className="text-xs text-gray-400">
+                          {isAr ? 'يمكنك تحديد عدد مخصص للمتصلين بالموقع لحظياً لجميع زوار البوابة. في حال حذف القيمة بالكامل سيتم استخدام العداد الحقيقي الفعلي للمستخدمين المتصلين.' : 'You can manually specify a custom number for active users across the portal. Clearing this field entirely will fall back to using the actual real active visitors.'}
+                        </p>
+                      </div>
+
+                      <div className="space-y-1.5">
+                        <label className="text-xs text-gold-400 font-semibold block">
+                          {isAr ? 'عدد المتصلين المخصص (اتركه فارغاً للاعتماد الفعلي)' : 'Custom Online Count (Leave empty for actual count)'}
+                        </label>
+                        <input
+                          type="text"
+                          placeholder={isAr ? 'مثال: 150 (أو اتركه فارغاً)' : 'e.g. 150 (or leave empty)'}
+                          value={tempOnlineUsersOverride}
+                          onChange={(e) => setTempOnlineUsersOverride(e.target.value)}
+                          className="w-full text-xs p-3 rounded-lg bg-royal-950 border border-gold-500/20 text-gold-100 outline-none focus:border-gold-400 font-mono"
+                        />
+                      </div>
+
+                      <button
+                        onClick={() => {
+                          onSaveOnlineUsersOverride(tempOnlineUsersOverride);
+                          showToast(isAr ? 'تم حفظ التعديل بنجاح والمزامنة لجميع المستخدمين!' : 'Live count updated and synchronized to all clients!');
+                        }}
+                        className="py-2.5 px-5 rounded-lg text-xs bg-emerald-600 hover:bg-emerald-700 text-white font-bold flex items-center gap-2 cursor-pointer transition-all border border-emerald-500/40"
+                      >
+                        <Check className="w-4 h-4" />
+                        <span>{isAr ? 'حفظ وتحديث المتصلين' : 'Save and Update Active Count'}</span>
                       </button>
                     </div>
                   </div>

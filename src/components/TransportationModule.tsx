@@ -441,14 +441,7 @@ export default function TransportationModule({
           </p>
         </div>
 
-        {/* Admin Settings Button */}
-        <button
-          onClick={() => setIsAdminOpen(true)}
-          className="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-royal-950/60 border border-gold-500/30 text-gold-300 hover:text-gold-200 hover:bg-royal-800/60 transition-all text-xs font-semibold cursor-pointer"
-        >
-          <Settings className="w-4 h-4 text-gold-400" />
-          <span>{isAr ? 'لوحة تحكم الأسعار' : 'Tariff Controller'}</span>
-        </button>
+        {/* Admin Settings Button Removed */}
       </div>
 
       {/* RENDER TAB 1: Route Calculator */}

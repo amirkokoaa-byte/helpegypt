@@ -15,7 +15,7 @@ import { motion, AnimatePresence } from 'motion/react';
 
 // Firebase core integration
 import { initializeApp, getApps } from 'firebase/app';
-import { getFirestore, onSnapshot, collection, doc } from 'firebase/firestore';
+import { getFirestore, onSnapshot, collection, doc, setDoc } from 'firebase/firestore';
 
 // Import Transport Data defaults
 import { 
@@ -48,6 +48,10 @@ export default function App() {
   });
   const [appNameEn, setAppNameEn] = useState<string>(() => {
     return localStorage.getItem('egypt_hub_app_name_en') || 'National Integrated Services Hub';
+  });
+
+  const [onlineUsersOverride, setOnlineUsersOverride] = useState<string>(() => {
+    return localStorage.getItem('egypt_hub_online_users_override') || '';
   });
 
   const [metroLines, setMetroLines] = useState<any[]>(() => {
@@ -92,6 +96,24 @@ export default function App() {
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [firebaseStatus, setFirebaseStatus] = useState<'disconnected' | 'connected' | 'error'>('disconnected');
 
+  // Helper to write changed state to Firebase if connected
+  const writeToFirebase = async (dataToMerge: any) => {
+    const savedFb = localStorage.getItem('egypt_hub_firebase_config');
+    if (!savedFb) return;
+    try {
+      const config = JSON.parse(savedFb);
+      if (config.apiKey && config.apiKey !== 'YOUR_FIREBASE_API_KEY_HERE' && !config.apiKey.includes('YOUR_')) {
+        const app = getApps().length === 0 ? initializeApp(config) : getApps()[0];
+        const db = getFirestore(app);
+        const docRef = doc(db, 'transportation_pricing', 'current');
+        await setDoc(docRef, dataToMerge, { merge: true });
+        console.log('🛰️ [Firebase] State successfully synced to Firestore:', dataToMerge);
+      }
+    } catch (e) {
+      console.error('❌ [Firebase] Failed to write changes to Firestore:', e);
+    }
+  };
+
   // Real-time Firebase Sync Effect
   useEffect(() => {
     const savedFb = localStorage.getItem('egypt_hub_firebase_config');
@@ -114,14 +136,43 @@ export default function App() {
           setFirebaseStatus('connected');
           if (docSnap.exists()) {
             const data = docSnap.data();
-            console.log('✨ [Firebase] Real-time pricing update received:', data);
+            console.log('✨ [Firebase] Real-time database update received:', data);
             
-            // Merge into local pricing state
-            setPricing((prev: any) => {
-              const updated = { ...prev, ...data };
-              localStorage.setItem('egypt_hub_pricing', JSON.stringify(updated));
-              return updated;
-            });
+            if (data.pricing) {
+              setPricing((prev: any) => {
+                const updated = { ...prev, ...data.pricing };
+                localStorage.setItem('egypt_hub_pricing', JSON.stringify(updated));
+                return updated;
+              });
+            }
+            if (data.appNameAr !== undefined) {
+              setAppNameAr(data.appNameAr);
+              localStorage.setItem('egypt_hub_app_name_ar', data.appNameAr);
+            }
+            if (data.appNameEn !== undefined) {
+              setAppNameEn(data.appNameEn);
+              localStorage.setItem('egypt_hub_app_name_en', data.appNameEn);
+            }
+            if (data.metroLines) {
+              setMetroLines(data.metroLines);
+              localStorage.setItem('egypt_hub_metro_lines', JSON.stringify(data.metroLines));
+            }
+            if (data.monorailLines) {
+              setMonorailLines(data.monorailLines);
+              localStorage.setItem('egypt_hub_monorail_lines', JSON.stringify(data.monorailLines));
+            }
+            if (data.brtLines) {
+              setBrtLines(data.brtLines);
+              localStorage.setItem('egypt_hub_brt_lines', JSON.stringify(data.brtLines));
+            }
+            if (data.metroSubscriptions) {
+              setMetroSubscriptions(data.metroSubscriptions);
+              localStorage.setItem('egypt_hub_metro_subscriptions', JSON.stringify(data.metroSubscriptions));
+            }
+            if (data.onlineUsersOverride !== undefined) {
+              setOnlineUsersOverride(data.onlineUsersOverride);
+              localStorage.setItem('egypt_hub_online_users_override', data.onlineUsersOverride);
+            }
           }
         }, (err) => {
           console.error('❌ [Firebase] Pricing subscription error:', err);
@@ -160,16 +211,25 @@ export default function App() {
     localStorage.setItem('egypt_hub_app_name_en', en);
     setAppNameAr(ar);
     setAppNameEn(en);
+    writeToFirebase({ appNameAr: ar, appNameEn: en });
   };
 
   const handleSavePricing = (newPricing: any) => {
     localStorage.setItem('egypt_hub_pricing', JSON.stringify(newPricing));
     setPricing(newPricing);
+    writeToFirebase({ pricing: newPricing });
   };
 
   const handleSaveSubscriptions = (newSubs: any[]) => {
     localStorage.setItem('egypt_hub_metro_subscriptions', JSON.stringify(newSubs));
     setMetroSubscriptions(newSubs);
+    writeToFirebase({ metroSubscriptions: newSubs });
+  };
+
+  const handleSaveOnlineUsersOverride = (val: string) => {
+    localStorage.setItem('egypt_hub_online_users_override', val);
+    setOnlineUsersOverride(val);
+    writeToFirebase({ onlineUsersOverride: val });
   };
 
   const handleAddStation = (lineId: string, nameAr: string, nameEn: string) => {
@@ -188,6 +248,7 @@ export default function App() {
       });
       localStorage.setItem('egypt_hub_metro_lines', JSON.stringify(updated));
       setMetroLines(updated);
+      writeToFirebase({ metroLines: updated });
     } else if (lineId.startsWith('monorail')) {
       const updated = monorailLines.map(line => {
         if (line.id === lineId) {
@@ -197,6 +258,7 @@ export default function App() {
       });
       localStorage.setItem('egypt_hub_monorail_lines', JSON.stringify(updated));
       setMonorailLines(updated);
+      writeToFirebase({ monorailLines: updated });
     } else if (lineId.startsWith('brt')) {
       const updated = brtLines.map(line => {
         if (line.id === lineId) {
@@ -206,6 +268,7 @@ export default function App() {
       });
       localStorage.setItem('egypt_hub_brt_lines', JSON.stringify(updated));
       setBrtLines(updated);
+      writeToFirebase({ brtLines: updated });
     }
   };
 
@@ -219,6 +282,7 @@ export default function App() {
       });
       localStorage.setItem('egypt_hub_metro_lines', JSON.stringify(updated));
       setMetroLines(updated);
+      writeToFirebase({ metroLines: updated });
     } else if (lineId.startsWith('monorail')) {
       const updated = monorailLines.map(line => {
         if (line.id === lineId) {
@@ -228,6 +292,7 @@ export default function App() {
       });
       localStorage.setItem('egypt_hub_monorail_lines', JSON.stringify(updated));
       setMonorailLines(updated);
+      writeToFirebase({ monorailLines: updated });
     } else if (lineId.startsWith('brt')) {
       const updated = brtLines.map(line => {
         if (line.id === lineId) {
@@ -237,6 +302,7 @@ export default function App() {
       });
       localStorage.setItem('egypt_hub_brt_lines', JSON.stringify(updated));
       setBrtLines(updated);
+      writeToFirebase({ brtLines: updated });
     }
   };
 
@@ -291,6 +357,7 @@ export default function App() {
         appNameAr={appNameAr}
         appNameEn={appNameEn}
         onOpenSettings={() => setIsSettingsOpen(true)}
+        onlineUsersOverride={onlineUsersOverride}
       />
 
       {/* Main viewport */}
@@ -302,6 +369,7 @@ export default function App() {
           appNameAr={appNameAr} 
           appNameEn={appNameEn} 
           onOpenSettings={() => setIsSettingsOpen(true)} 
+          onClickHome={() => setCurrentModule('transport-calc')}
         />
 
         {/* Dynamic Screen/Module Router */}
@@ -477,6 +545,8 @@ export default function App() {
         onSaveSubscriptions={handleSaveSubscriptions}
         firebaseStatus={firebaseStatus}
         onResetAll={handleResetAll}
+        onlineUsersOverride={onlineUsersOverride}
+        onSaveOnlineUsersOverride={handleSaveOnlineUsersOverride}
       />
 
     </div>
