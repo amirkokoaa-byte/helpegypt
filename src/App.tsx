@@ -315,18 +315,31 @@ export default function App() {
     localStorage.removeItem('egypt_hub_metro_subscriptions');
     localStorage.removeItem('egypt_hub_pricing');
 
+    const defaultPricingObj = {
+      metro: defaultMetroPricing,
+      monorailTicketPrice: defaultMonorailTicketPrice,
+      brtTicketPrice: defaultBrtTicketPrice,
+      monorailTiers: monorailPricingTiers,
+      brtTiers: brtPricingTiers
+    };
+
     setAppNameAr('البوابة الوطنية الموحدة للخدمات');
     setAppNameEn('National Integrated Services Hub');
     setMetroLines(initialMetroLines);
     setMonorailLines(initialMonorailLines);
     setBrtLines(initialBrtLines);
     setMetroSubscriptions(initialMetroSubscriptions);
-    setPricing({
-      metro: defaultMetroPricing,
-      monorailTicketPrice: defaultMonorailTicketPrice,
-      brtTicketPrice: defaultBrtTicketPrice,
-      monorailTiers: monorailPricingTiers,
-      brtTiers: brtPricingTiers
+    setPricing(defaultPricingObj);
+
+    writeToFirebase({
+      appNameAr: 'البوابة الوطنية الموحدة للخدمات',
+      appNameEn: 'National Integrated Services Hub',
+      metroLines: initialMetroLines,
+      monorailLines: initialMonorailLines,
+      brtLines: initialBrtLines,
+      metroSubscriptions: initialMetroSubscriptions,
+      pricing: defaultPricingObj,
+      onlineUsersOverride: ''
     });
   };
 
