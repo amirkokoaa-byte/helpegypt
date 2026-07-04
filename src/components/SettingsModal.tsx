@@ -10,7 +10,9 @@ import {
   Sparkles, 
   Trash2, 
   AlertCircle,
-  HelpCircle
+  HelpCircle,
+  Database,
+  Wifi
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -39,6 +41,9 @@ interface SettingsModalProps {
   metroSubscriptions: any[];
   onSaveSubscriptions: (newSubs: any[]) => void;
 
+  // Firebase status
+  firebaseStatus?: 'disconnected' | 'connected' | 'error';
+
   // Reset
   onResetAll: () => void;
 }
@@ -59,6 +64,7 @@ export default function SettingsModal({
   onDeleteStation,
   metroSubscriptions,
   onSaveSubscriptions,
+  firebaseStatus = 'disconnected',
   onResetAll
 }: SettingsModalProps) {
   const isAr = lang === 'ar';
@@ -69,7 +75,16 @@ export default function SettingsModal({
   const [authError, setAuthError] = useState('');
 
   // Active Tab
-  const [activeTab, setActiveTab] = useState<'name' | 'pricing' | 'stations' | 'subscriptions'>('name');
+  const [activeTab, setActiveTab] = useState<'name' | 'pricing' | 'stations' | 'subscriptions' | 'firebase'>('name');
+
+  // Firebase integration states
+  const [fbApiKey, setFbApiKey] = useState('');
+  const [fbAuthDomain, setFbAuthDomain] = useState('');
+  const [fbProjectId, setFbProjectId] = useState('');
+  const [fbStorageBucket, setFbStorageBucket] = useState('');
+  const [fbMessagingSenderId, setFbMessagingSenderId] = useState('');
+  const [fbAppId, setFbAppId] = useState('');
+  const [fbMeasurementId, setFbMeasurementId] = useState('');
 
   // Form states
   const [tempAppNameAr, setTempAppNameAr] = useState(appNameAr);
@@ -97,6 +112,28 @@ export default function SettingsModal({
       setAuthError('');
       setStationSuccess('');
       // Do not reset authorized so they don't have to re-enter password if they close & reopen in same view
+      
+      const savedFb = localStorage.getItem('egypt_hub_firebase_config');
+      if (savedFb) {
+        try {
+          const parsed = JSON.parse(savedFb);
+          setFbApiKey(parsed.apiKey || '');
+          setFbAuthDomain(parsed.authDomain || '');
+          setFbProjectId(parsed.projectId || '');
+          setFbStorageBucket(parsed.storageBucket || '');
+          setFbMessagingSenderId(parsed.messagingSenderId || '');
+          setFbAppId(parsed.appId || '');
+          setFbMeasurementId(parsed.measurementId || '');
+        } catch (e) {}
+      } else {
+        setFbApiKey('');
+        setFbAuthDomain('');
+        setFbProjectId('');
+        setFbStorageBucket('');
+        setFbMessagingSenderId('');
+        setFbAppId('');
+        setFbMeasurementId('');
+      }
     }
   }, [isOpen, appNameAr, appNameEn, pricing, metroSubscriptions]);
 
@@ -136,6 +173,23 @@ export default function SettingsModal({
   const handleSaveSubscriptions = () => {
     onSaveSubscriptions(tempSubscriptions);
     showToast(isAr ? 'تم حفظ الاشتراكات والأسعار بنجاح!' : 'Subscriptions saved successfully!');
+  };
+
+  const handleSaveFirebase = () => {
+    const config = {
+      apiKey: fbApiKey.trim(),
+      authDomain: fbAuthDomain.trim(),
+      projectId: fbProjectId.trim(),
+      storageBucket: fbStorageBucket.trim(),
+      messagingSenderId: fbMessagingSenderId.trim(),
+      appId: fbAppId.trim(),
+      measurementId: fbMeasurementId.trim()
+    };
+    localStorage.setItem('egypt_hub_firebase_config', JSON.stringify(config));
+    showToast(isAr ? 'تم حفظ إعدادات Firebase بنجاح! جاري الاتصال المباشر...' : 'Firebase configuration saved! Establishing live connection...');
+    setTimeout(() => {
+      window.location.reload();
+    }, 1500);
   };
 
   const [toastMessage, setToastMessage] = useState('');
@@ -315,6 +369,18 @@ export default function SettingsModal({
                 >
                   <Settings className="w-4 h-4 shrink-0 text-gold-500" />
                   <span>{isAr ? 'الاشتراكات والأسعار' : 'Subscriptions'}</span>
+                </button>
+
+                <button
+                  onClick={() => setActiveTab('firebase')}
+                  className={`w-full text-right ${!isAr && 'text-left'} py-2.5 px-3 rounded text-xs transition-all flex items-center gap-2 cursor-pointer ${
+                    activeTab === 'firebase' 
+                      ? 'bg-gold-500/20 text-gold-300 border border-gold-400/30 font-bold' 
+                      : 'text-gray-400 hover:text-gold-300 hover:bg-royal-850/40'
+                  }`}
+                >
+                  <Database className="w-4 h-4 shrink-0 text-gold-500" />
+                  <span>{isAr ? 'الربط اللحظي بـ Firebase' : 'Firebase Sync'}</span>
                 </button>
 
                 <div className="hidden md:block flex-grow" />
@@ -728,6 +794,158 @@ export default function SettingsModal({
                         <Check className="w-4 h-4" />
                         <span>{isAr ? 'حفظ الاشتراكات المعدلة' : 'Save Subscriptions'}</span>
                       </button>
+                    </div>
+                  </div>
+                )}
+
+                {/* 5. Firebase Realtime Sync Editor */}
+                {activeTab === 'firebase' && (
+                  <div className="space-y-6 animate-fadeIn">
+                    <div className="p-4 rounded-lg bg-gold-500/5 border border-gold-500/15 space-y-2">
+                      <h4 className="text-sm font-bold text-gold-300 flex items-center gap-2">
+                        <Wifi className="w-4 h-4 text-emerald-400 animate-pulse" />
+                        <span>{isAr ? 'إعدادات ربط قاعدة البيانات اللحظية (Firebase Cloud Firestore)' : 'Firebase Cloud Firestore Real-time Sync Config'}</span>
+                      </h4>
+                      <p className="text-xs text-gray-400 leading-relaxed">
+                        {isAr 
+                          ? 'قم بوضع مفاتيح مشروع Firebase الخاص بك بالأسفل لتفعيل الاستماع اللحظي (onSnapshot). عند تحديث الأسعار أو الخدمات في Firestore، ستنعكس التحديثات فوراً وبشكل حي لكافة المستخدمين المتصلين في نفس اللحظة دون الحاجة لتحديث الصفحة.' 
+                          : 'Paste your Firebase configuration keys below to enable true real-time synchronization (onSnapshot). Any pricing or service updates published to Firestore will push instantly to all active client screens.'}
+                      </p>
+                      
+                      {/* Connection Status Indicator */}
+                      <div className="flex items-center gap-2 pt-2 border-t border-gold-500/10">
+                        <span className="text-[11px] font-medium text-gold-400">
+                          {isAr ? 'حالة الاتصال المباشر:' : 'Live Sync Connection Status:'}
+                        </span>
+                        {firebaseStatus === 'connected' ? (
+                          <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
+                            <span className="relative flex h-1.5 w-1.5">
+                              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                              <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
+                            </span>
+                            {isAr ? 'متصل ومزامن لحظياً' : 'CONNECTED & LIVE'}
+                          </span>
+                        ) : firebaseStatus === 'error' ? (
+                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold bg-red-500/10 border border-red-500/30 text-red-400">
+                            {isAr ? 'خطأ في الاتصال' : 'CONNECTION ERROR'}
+                          </span>
+                        ) : (
+                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold bg-gray-500/10 border border-gray-500/30 text-gray-400">
+                            {isAr ? 'غير متصل (وضع البيانات المحلية)' : 'OFFLINE / LOCAL DATA MODE'}
+                          </span>
+                        )}
+                      </div>
+                      <div className="text-[10px] bg-royal-950/40 p-2.5 rounded border border-gold-500/10 text-gold-400 font-mono">
+                        {isAr 
+                          ? '💡 تنويه: الإعدادات تُحفظ محلياً وبشكل آمن في متصفحك. لمزيد من التفاصيل يرجى الاطلاع على الكود المتكامل والموثق في ملف /src/firebase-integration.js.' 
+                          : '💡 Note: Keys are saved securely in your browser cache. For direct raw integration, see the annotated source file at /src/firebase-integration.js.'}
+                      </div>
+                    </div>
+
+                    <div className="space-y-4 bg-royal-950/40 p-5 rounded-xl border border-gold-500/10">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="space-y-1.5">
+                          <label className="text-xs text-gold-400 font-semibold block">
+                            {isAr ? 'مفتاح واجهة التطبيق (API Key)' : 'API Key'}
+                          </label>
+                          <input
+                            type="text"
+                            placeholder="AIzaSy..."
+                            value={fbApiKey}
+                            onChange={(e) => setFbApiKey(e.target.value)}
+                            className="w-full text-xs p-3 rounded-lg bg-royal-950 border border-gold-500/20 text-gold-100 outline-none focus:border-gold-400 transition-all"
+                          />
+                        </div>
+
+                        <div className="space-y-1.5">
+                          <label className="text-xs text-gold-400 font-semibold block">
+                            {isAr ? 'نطاق المصادقة (Auth Domain)' : 'Auth Domain'}
+                          </label>
+                          <input
+                            type="text"
+                            placeholder="project-id.firebaseapp.com"
+                            value={fbAuthDomain}
+                            onChange={(e) => setFbAuthDomain(e.target.value)}
+                            className="w-full text-xs p-3 rounded-lg bg-royal-950 border border-gold-500/20 text-gold-100 outline-none focus:border-gold-400 transition-all"
+                          />
+                        </div>
+
+                        <div className="space-y-1.5">
+                          <label className="text-xs text-gold-400 font-semibold block">
+                            {isAr ? 'معرف المشروع (Project ID)' : 'Project ID'}
+                          </label>
+                          <input
+                            type="text"
+                            placeholder="project-id"
+                            value={fbProjectId}
+                            onChange={(e) => setFbProjectId(e.target.value)}
+                            className="w-full text-xs p-3 rounded-lg bg-royal-950 border border-gold-500/20 text-gold-100 outline-none focus:border-gold-400 transition-all"
+                          />
+                        </div>
+
+                        <div className="space-y-1.5">
+                          <label className="text-xs text-gold-400 font-semibold block">
+                            {isAr ? 'وعاء التخزين (Storage Bucket)' : 'Storage Bucket'}
+                          </label>
+                          <input
+                            type="text"
+                            placeholder="project-id.firebasestorage.app"
+                            value={fbStorageBucket}
+                            onChange={(e) => setFbStorageBucket(e.target.value)}
+                            className="w-full text-xs p-3 rounded-lg bg-royal-950 border border-gold-500/20 text-gold-100 outline-none focus:border-gold-400 transition-all"
+                          />
+                        </div>
+
+                        <div className="space-y-1.5">
+                          <label className="text-xs text-gold-400 font-semibold block">
+                            {isAr ? 'معرف المرسل (Messaging Sender ID)' : 'Messaging Sender ID'}
+                          </label>
+                          <input
+                            type="text"
+                            placeholder="487049731043"
+                            value={fbMessagingSenderId}
+                            onChange={(e) => setFbMessagingSenderId(e.target.value)}
+                            className="w-full text-xs p-3 rounded-lg bg-royal-950 border border-gold-500/20 text-gold-100 outline-none focus:border-gold-400 transition-all"
+                          />
+                        </div>
+
+                        <div className="space-y-1.5">
+                          <label className="text-xs text-gold-400 font-semibold block">
+                            {isAr ? 'معرف التطبيق (App ID)' : 'App ID'}
+                          </label>
+                          <input
+                            type="text"
+                            placeholder="1:487049731043:web:3e49..."
+                            value={fbAppId}
+                            onChange={(e) => setFbAppId(e.target.value)}
+                            className="w-full text-xs p-3 rounded-lg bg-royal-950 border border-gold-500/20 text-gold-100 outline-none focus:border-gold-400 transition-all"
+                          />
+                        </div>
+                      </div>
+
+                      <div className="space-y-1.5">
+                        <label className="text-xs text-gold-400 font-semibold block">
+                          {isAr ? 'معرف القياس (Measurement ID) - اختياري' : 'Measurement ID (Optional)'}
+                        </label>
+                        <input
+                          type="text"
+                          placeholder="G-S0D2Z0..."
+                          value={fbMeasurementId}
+                          onChange={(e) => setFbMeasurementId(e.target.value)}
+                          className="w-full text-xs p-3 rounded-lg bg-royal-950 border border-gold-500/20 text-gold-100 outline-none focus:border-gold-400 transition-all"
+                        />
+                      </div>
+
+                      <div className="flex gap-3 pt-4 border-t border-gold-500/10">
+                        <button
+                          onClick={handleSaveFirebase}
+                          disabled={!fbApiKey || !fbProjectId}
+                          className="flex-grow py-3 px-5 rounded-lg text-xs bg-emerald-600 hover:bg-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold flex items-center justify-center gap-2 cursor-pointer transition-all border border-emerald-500/35"
+                        >
+                          <Check className="w-4 h-4" />
+                          <span>{isAr ? 'حفظ البيانات وتفعيل الاتصال اللحظي' : 'Connect & Activate Firebase'}</span>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 )}

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { io } from 'socket.io-client';
 import { 
   Train, 
   PhoneCall, 
@@ -88,6 +89,22 @@ export default function Sidebar({
   onOpenSettings
 }: SidebarProps) {
   const [isOpen, setIsOpen] = useState(true);
+  const [liveUsers, setLiveUsers] = useState<number>(1);
+
+  useEffect(() => {
+    const socket = io(window.location.origin, {
+      transports: ['websocket', 'polling']
+    });
+
+    socket.on('live-count', (count: number) => {
+      setLiveUsers(count);
+    });
+
+    return () => {
+      socket.disconnect();
+    };
+  }, []);
+
   const [openMenus, setOpenMenus] = useState({
     transport: false,
     telecom: false,
@@ -985,6 +1002,25 @@ export default function Sidebar({
 
         {/* Sidebar Footer with Language Switcher */}
         <div className="p-4 border-t border-gold-500/20 flex flex-col gap-3">
+          {/* Live Online Users Counter - Pharaonic Glass-morphism */}
+          <div className="bg-royal-950/50 backdrop-blur-md border border-gold-500/20 rounded-lg p-2.5 flex items-center justify-between shadow-[0_0_15px_rgba(212,175,55,0.05)]">
+            <div className="flex items-center gap-2">
+              <Users className="w-4 h-4 text-gold-400" />
+              <span className="text-[11px] font-medium text-gold-200">
+                {isAr ? 'المتواجدون الآن:' : 'Live Online Visitors:'}
+              </span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              </span>
+              <span className="text-xs font-bold text-emerald-400 font-mono tracking-wider">
+                {liveUsers}
+              </span>
+            </div>
+          </div>
+
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 text-xs text-gold-400">
               <ShieldCheck className="w-4 h-4 text-gold-500" />

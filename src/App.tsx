@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 import TransportationModule from './components/TransportationModule';
@@ -12,6 +12,10 @@ import PostModule from './components/PostModule';
 import BanksModule from './components/BanksModule';
 import { Compass, Sparkles, AlertCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+
+// Firebase core integration
+import { initializeApp, getApps } from 'firebase/app';
+import { getFirestore, onSnapshot, collection, doc } from 'firebase/firestore';
 
 // Import Transport Data defaults
 import { 
@@ -86,6 +90,69 @@ export default function App() {
   });
 
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+  const [firebaseStatus, setFirebaseStatus] = useState<'disconnected' | 'connected' | 'error'>('disconnected');
+
+  // Real-time Firebase Sync Effect
+  useEffect(() => {
+    const savedFb = localStorage.getItem('egypt_hub_firebase_config');
+    if (!savedFb) return;
+
+    try {
+      const config = JSON.parse(savedFb);
+      // Only connect if it has valid keys
+      if (config.apiKey && config.apiKey !== 'YOUR_FIREBASE_API_KEY_HERE' && !config.apiKey.includes('YOUR_')) {
+        console.log('🛰️ [Firebase] Connecting to user DB project:', config.projectId);
+        
+        // Ensure no duplicate apps
+        const app = getApps().length === 0 ? initializeApp(config) : getApps()[0];
+        const db = getFirestore(app);
+
+        // Listen to transportation_pricing/current document
+        const pricingDocRef = doc(db, 'transportation_pricing', 'current');
+        
+        const unsubPricing = onSnapshot(pricingDocRef, (docSnap) => {
+          setFirebaseStatus('connected');
+          if (docSnap.exists()) {
+            const data = docSnap.data();
+            console.log('✨ [Firebase] Real-time pricing update received:', data);
+            
+            // Merge into local pricing state
+            setPricing((prev: any) => {
+              const updated = { ...prev, ...data };
+              localStorage.setItem('egypt_hub_pricing', JSON.stringify(updated));
+              return updated;
+            });
+          }
+        }, (err) => {
+          console.error('❌ [Firebase] Pricing subscription error:', err);
+          setFirebaseStatus('error');
+        });
+
+        // Sync subscriptions from transportation_pricing/subscriptions if it exists
+        const subsDocRef = doc(db, 'transportation_pricing', 'subscriptions');
+        const unsubSubs = onSnapshot(subsDocRef, (docSnap) => {
+          if (docSnap.exists()) {
+            const data = docSnap.data();
+            if (data && Array.isArray(data.list)) {
+              console.log('✨ [Firebase] Real-time subscriptions list update received:', data.list);
+              setMetroSubscriptions(data.list);
+              localStorage.setItem('egypt_hub_metro_subscriptions', JSON.stringify(data.list));
+            }
+          }
+        }, (err) => {
+          console.warn('⚠️ [Firebase] Subscriptions subscription error:', err);
+        });
+
+        return () => {
+          unsubPricing();
+          unsubSubs();
+        };
+      }
+    } catch (error) {
+      console.error('❌ [Firebase] Connection setup failed:', error);
+      setFirebaseStatus('error');
+    }
+  }, []);
 
   // Handlers for settings customization
   const handleSaveAppNames = (ar: string, en: string) => {
@@ -408,6 +475,7 @@ export default function App() {
         onDeleteStation={handleDeleteStation}
         metroSubscriptions={metroSubscriptions}
         onSaveSubscriptions={handleSaveSubscriptions}
+        firebaseStatus={firebaseStatus}
         onResetAll={handleResetAll}
       />
 
