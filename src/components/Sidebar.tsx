@@ -24,6 +24,7 @@ import {
   Wind,
   Droplet,
   ShoppingBag,
+  ShoppingCart,
   HelpCircle,
   Heart,
   Users,
@@ -552,6 +553,40 @@ export default function Sidebar({
                 <span className="w-1 h-1 bg-emerald-400 rounded-full"></span>
                 {isAr ? 'مباشر' : 'Live'}
               </span>
+            </button>
+          </div>
+
+          {/* Module: Egypt Banks */}
+          <div className="space-y-1">
+            <button
+              onClick={() => {
+                handleSelectModule('egypt_banks');
+              }}
+              className={`w-full flex items-center justify-between p-2.5 rounded-lg text-gold-200 hover:text-gold-100 hover:bg-royal-800/50 transition-all duration-150 cursor-pointer ${
+                currentModule === 'egypt_banks' ? 'bg-gold-500/20 text-gold-300 border border-gold-400/30 font-semibold' : ''
+              }`}
+            >
+              <div className="flex items-center gap-3">
+                <Landmark className="w-5 h-5 text-gold-400" />
+                <span className="font-semibold text-sm">{isAr ? 'بنوك مصر' : 'Banks in Egypt'}</span>
+              </div>
+            </button>
+          </div>
+
+          {/* Module 3.2: Supermarket Chains */}
+          <div className="space-y-1">
+            <button
+              onClick={() => {
+                handleSelectModule('supermarkets');
+              }}
+              className={`w-full flex items-center justify-between p-2.5 rounded-lg text-gold-200 hover:text-gold-100 hover:bg-royal-800/50 transition-all duration-150 cursor-pointer ${
+                currentModule === 'supermarkets' ? 'bg-gold-500/20 text-gold-300 border border-gold-400/30 font-semibold' : ''
+              }`}
+            >
+              <div className="flex items-center gap-3">
+                <ShoppingCart className="w-5 h-5 text-gold-400" />
+                <span className="font-semibold text-sm">{isAr ? 'سلاسل السوبر ماركت' : 'Supermarket Chains'}</span>
+              </div>
             </button>
           </div>
 

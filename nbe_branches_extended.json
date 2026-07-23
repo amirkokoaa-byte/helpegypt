@@ -1,0 +1,923 @@
+{
+  "id": "nbe_extended",
+  "nameAr": "البنك الأهلي المصري (بيانات مكثفة)",
+  "nameEn": "National Bank of Egypt (Extended)",
+  "category": "Public Sector Bank",
+  "categoryAr": "بنوك القطاع العام",
+  "descriptionAr": "أعرق وأكبر البنوك التجارية في مصر. (هذا السجل يحتوي على شبكة الفروع الشاملة للقاهرة والجيزة والإسكندرية).",
+  "descriptionEn": "The oldest and largest commercial bank in Egypt. (This record contains the extended branch network).",
+  "branches": [
+    {
+      "branchName": "فرع قصر النيل",
+      "governorate": "القاهرة",
+      "district": "وسط البلد",
+      "detailedAddress": "33 شارع قصر النيل، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D9%82%D8%B5%D8%B1%20%D8%A7%D9%84%D9%86%D9%8A%D9%84%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع ثروت",
+      "governorate": "القاهرة",
+      "district": "وسط البلد",
+      "detailedAddress": "39 شارع عبد الخالق ثروت، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%AB%D8%B1%D9%88%D8%AA%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع الموسكي",
+      "governorate": "القاهرة",
+      "district": "الموسكي",
+      "detailedAddress": "4 شارع جوهر القائد، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%83%D9%8A%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع العتبة",
+      "governorate": "القاهرة",
+      "district": "العتبة",
+      "detailedAddress": "17 ميدان العتبة، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B9%D8%AA%D8%A8%D8%A9%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع جاردن سيتي",
+      "governorate": "القاهرة",
+      "district": "جاردن سيتي",
+      "detailedAddress": "10 شارع جمال الدين أبو المحاسن، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%AC%D8%A7%D8%B1%D8%AF%D9%86%20%D8%B3%D9%8A%D8%AA%D9%8A%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع السيدة زينب",
+      "governorate": "القاهرة",
+      "district": "السيدة زينب",
+      "detailedAddress": "298 شارع بورسعيد، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B3%D9%8A%D8%AF%D8%A9%20%D8%B2%D9%8A%D9%86%D8%A8%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع المنيل",
+      "governorate": "القاهرة",
+      "district": "المنيل",
+      "detailedAddress": "55 شارع المنيل، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D9%85%D9%86%D9%8A%D9%84%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع شبرا مصر",
+      "governorate": "القاهرة",
+      "district": "شبرا",
+      "detailedAddress": "62 شارع شبرا، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%B4%D8%A8%D8%B1%D8%A7%20%D9%85%D8%B5%D8%B1%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع روض الفرج",
+      "governorate": "القاهرة",
+      "district": "شبرا",
+      "detailedAddress": "119 شارع طوسون، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%B1%D9%88%D8%B6%20%D8%A7%D9%84%D9%81%D8%B1%D8%AC%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع الخلفاوي",
+      "governorate": "القاهرة",
+      "district": "شبرا",
+      "detailedAddress": "شارع معمل الألبان، ميدان الخلفاوي، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%AE%D9%84%D9%81%D8%A7%D9%88%D9%8A%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع روكسي",
+      "governorate": "القاهرة",
+      "district": "مصر الجديدة",
+      "detailedAddress": "21 شارع إبراهيم اللقاني، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%B1%D9%88%D9%83%D8%B3%D9%8A%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع الكوربة",
+      "governorate": "القاهرة",
+      "district": "مصر الجديدة",
+      "detailedAddress": "22 شارع بغداد، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D9%83%D9%88%D8%B1%D8%A8%D8%A9%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع الميرغني",
+      "governorate": "القاهرة",
+      "district": "مصر الجديدة",
+      "detailedAddress": "81 شارع الميرغني، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D9%85%D9%8A%D8%B1%D8%BA%D9%86%D9%8A%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع الحجاز",
+      "governorate": "القاهرة",
+      "district": "مصر الجديدة",
+      "detailedAddress": "141 شارع الحجاز، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%AD%D8%AC%D8%A7%D8%B2%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع تريومف",
+      "governorate": "القاهرة",
+      "district": "مصر الجديدة",
+      "detailedAddress": "ميدان تريومف، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%AA%D8%B1%D9%8A%D9%88%D9%85%D9%81%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع نادي هليوبوليس",
+      "governorate": "القاهرة",
+      "district": "مصر الجديدة",
+      "detailedAddress": "داخل نادي هليوبوليس الرياضي، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D9%86%D8%A7%D8%AF%D9%8A%20%D9%87%D9%84%D9%8A%D9%88%D8%A8%D9%88%D9%84%D9%8A%D8%B3%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع مكرم عبيد",
+      "governorate": "القاهرة",
+      "district": "مدينة نصر",
+      "detailedAddress": "86 شارع مكرم عبيد، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D9%85%D9%83%D8%B1%D9%85%20%D8%B9%D8%A8%D9%8A%D8%AF%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع عباس العقاد",
+      "governorate": "القاهرة",
+      "district": "مدينة نصر",
+      "detailedAddress": "34 شارع عباس العقاد، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%B9%D8%A8%D8%A7%D8%B3%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%AF%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع حسن المأمون",
+      "governorate": "القاهرة",
+      "district": "مدينة نصر",
+      "detailedAddress": "109 شارع حسن المأمون، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%AD%D8%B3%D9%86%20%D8%A7%D9%84%D9%85%D8%A3%D9%85%D9%88%D9%86%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع مصطفى النحاس",
+      "governorate": "القاهرة",
+      "district": "مدينة نصر",
+      "detailedAddress": "112 شارع مصطفى النحاس، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D9%85%D8%B5%D8%B7%D9%81%D9%89%20%D8%A7%D9%84%D9%86%D8%AD%D8%A7%D8%B3%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع الطيران",
+      "governorate": "القاهرة",
+      "district": "مدينة نصر",
+      "detailedAddress": "42 شارع الطيران، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B7%D9%8A%D8%B1%D8%A7%D9%86%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع الحي السابع",
+      "governorate": "القاهرة",
+      "district": "مدينة نصر",
+      "detailedAddress": "شارع ذاكر حسين، الحي السابع، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%AD%D9%8A%20%D8%A7%D9%84%D8%B3%D8%A7%D8%A8%D8%B9%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع نادي الزهور",
+      "governorate": "القاهرة",
+      "district": "مدينة نصر",
+      "detailedAddress": "داخل نادي الزهور الرياضي، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D9%86%D8%A7%D8%AF%D9%8A%20%D8%A7%D9%84%D8%B2%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع المعادي جراند مول",
+      "governorate": "القاهرة",
+      "district": "المعادي",
+      "detailedAddress": "داخل المعادي جراند مول، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%AF%D9%8A%20%D8%AC%D8%B1%D8%A7%D9%86%D8%AF%20%D9%85%D9%88%D9%84%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع دجلة المعادي",
+      "governorate": "القاهرة",
+      "district": "المعادي",
+      "detailedAddress": "شارع 233، دجلة المعادي، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%AF%D8%AC%D9%84%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%AF%D9%8A%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع كورنيش المعادي",
+      "governorate": "القاهرة",
+      "district": "المعادي",
+      "detailedAddress": "برج غادة، كورنيش النيل، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D9%83%D9%88%D8%B1%D9%86%D9%8A%D8%B4%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%AF%D9%8A%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع شارع 9 المعادي",
+      "governorate": "القاهرة",
+      "district": "المعادي",
+      "detailedAddress": "84 شارع 9، المعادي، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%B4%D8%A7%D8%B1%D8%B9%209%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%AF%D9%8A%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع المقطم",
+      "governorate": "القاهرة",
+      "district": "المقطم",
+      "detailedAddress": "شارع 9، ميدان النافورة، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D9%85%D9%82%D8%B7%D9%85%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع شارع التسعين",
+      "governorate": "القاهرة",
+      "district": "التجمع الخامس",
+      "detailedAddress": "شارع التسعين الجنوبي، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D8%AA%D8%B3%D8%B9%D9%8A%D9%86%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع كونكورد بلازا",
+      "governorate": "القاهرة",
+      "district": "التجمع الخامس",
+      "detailedAddress": "مول كونكورد بلازا، شارع التسعين، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D9%83%D9%88%D9%86%D9%83%D9%88%D8%B1%D8%AF%20%D8%A8%D9%84%D8%A7%D8%B2%D8%A7%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع بوينت 90",
+      "governorate": "القاهرة",
+      "district": "التجمع الخامس",
+      "detailedAddress": "مول بوينت 90، أمام الجامعة الأمريكية، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A8%D9%88%D9%8A%D9%86%D8%AA%2090%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع واتر واي",
+      "governorate": "القاهرة",
+      "district": "التجمع الخامس",
+      "detailedAddress": "مول واتر واي، محور السادات، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D9%88%D8%A7%D8%AA%D8%B1%20%D9%88%D8%A7%D9%8A%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع كايرو فيستيفال",
+      "governorate": "القاهرة",
+      "district": "التجمع الخامس",
+      "detailedAddress": "كايرو فيستيفال سيتي مول، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D9%83%D8%A7%D9%8A%D8%B1%D9%88%20%D9%81%D9%8A%D8%B3%D8%AA%D9%8A%D9%81%D8%A7%D9%84%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع الرحاب 1",
+      "governorate": "القاهرة",
+      "district": "مدينة الرحاب",
+      "detailedAddress": "السوق التجاري الأول، الرحاب، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B1%D8%AD%D8%A7%D8%A8%201%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع الرحاب 2",
+      "governorate": "القاهرة",
+      "district": "مدينة الرحاب",
+      "detailedAddress": "السوق الشرقي، الرحاب، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B1%D8%AD%D8%A7%D8%A8%202%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع مدينتي",
+      "governorate": "القاهرة",
+      "district": "مدينتي",
+      "detailedAddress": "منطقة البنوك، مدينتي، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D9%85%D8%AF%D9%8A%D9%86%D8%AA%D9%8A%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع الشروق",
+      "governorate": "القاهرة",
+      "district": "مدينة الشروق",
+      "detailedAddress": "المركز التجاري، بانوراما الشروق، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B4%D8%B1%D9%88%D9%82%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع العبور",
+      "governorate": "القاهرة",
+      "district": "مدينة العبور",
+      "detailedAddress": "الحي الأول، بجوار جهاز المدينة، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B9%D8%A8%D9%88%D8%B1%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع بدر",
+      "governorate": "القاهرة",
+      "district": "مدينة بدر",
+      "detailedAddress": "المنطقة المركزية، مدينة بدر، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A8%D8%AF%D8%B1%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع العاشر من رمضان",
+      "governorate": "القاهرة",
+      "district": "العاشر من رمضان",
+      "detailedAddress": "المجاورة الأولى، العاشر من رمضان، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D8%B1%20%D9%85%D9%86%20%D8%B1%D9%85%D8%B6%D8%A7%D9%86%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع حلوان",
+      "governorate": "القاهرة",
+      "district": "حلوان",
+      "detailedAddress": "28 شارع محمد سيد أحمد، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%AD%D9%84%D9%88%D8%A7%D9%86%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع 15 مايو",
+      "governorate": "القاهرة",
+      "district": "15 مايو",
+      "detailedAddress": "المجاورة الثالثة، 15 مايو، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%2015%20%D9%85%D8%A7%D9%8A%D9%88%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع الزيتون",
+      "governorate": "القاهرة",
+      "district": "الزيتون",
+      "detailedAddress": "91 شارع طومان باي، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B2%D9%8A%D8%AA%D9%88%D9%86%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع سراي القبة",
+      "governorate": "القاهرة",
+      "district": "سراي القبة",
+      "detailedAddress": "ميدان سراي القبة، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%B3%D8%B1%D8%A7%D9%8A%20%D8%A7%D9%84%D9%82%D8%A8%D8%A9%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع حدائق القبة",
+      "governorate": "القاهرة",
+      "district": "حدائق القبة",
+      "detailedAddress": "123 شارع مصر والسودان، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%AD%D8%AF%D8%A7%D8%A6%D9%82%20%D8%A7%D9%84%D9%82%D8%A8%D8%A9%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع عين شمس",
+      "governorate": "القاهرة",
+      "district": "عين شمس",
+      "detailedAddress": "64 شارع أحمد عصمت، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%B9%D9%8A%D9%86%20%D8%B4%D9%85%D8%B3%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع المطرية",
+      "governorate": "القاهرة",
+      "district": "المطرية",
+      "detailedAddress": "ميدان المطرية، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D9%85%D8%B7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع النزهة الجديدة",
+      "governorate": "القاهرة",
+      "district": "النزهة الجديدة",
+      "detailedAddress": "شارع جوزيف تيتو، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D9%86%D8%B2%D9%87%D8%A9%20%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع جسر السويس",
+      "governorate": "القاهرة",
+      "district": "جسر السويس",
+      "detailedAddress": "شارع جسر السويس، عمارات الميريلاند، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%AC%D8%B3%D8%B1%20%D8%A7%D9%84%D8%B3%D9%88%D9%8A%D8%B3%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع السلام",
+      "governorate": "القاهرة",
+      "district": "مدينة السلام",
+      "detailedAddress": "مساكن اسكندرية، مدينة السلام، القاهرة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
+    },
+    {
+      "branchName": "فرع الجيزة الرئيسي",
+      "governorate": "الجيزة",
+      "district": "الجيزة",
+      "detailedAddress": "6 شارع مراد، ميدان الجيزة، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع الدقي",
+      "governorate": "الجيزة",
+      "district": "الدقي",
+      "detailedAddress": "54 شارع مصدق، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%AF%D9%82%D9%8A%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع التحرير الدقي",
+      "governorate": "الجيزة",
+      "district": "الدقي",
+      "detailedAddress": "122 شارع التحرير، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%AF%D9%82%D9%8A%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع نادي الصيد",
+      "governorate": "الجيزة",
+      "district": "الدقي",
+      "detailedAddress": "داخل نادي الصيد المصري، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D9%86%D8%A7%D8%AF%D9%8A%20%D8%A7%D9%84%D8%B5%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع المهندسين",
+      "governorate": "الجيزة",
+      "district": "المهندسين",
+      "detailedAddress": "40 شارع جامعة الدول العربية، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D9%85%D9%87%D9%86%D8%AF%D8%B3%D9%8A%D9%86%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع البطل أحمد عبد العزيز",
+      "governorate": "الجيزة",
+      "district": "المهندسين",
+      "detailedAddress": "47 شارع البطل أحمد عبد العزيز، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%A8%D8%B7%D9%84%20%D8%A3%D8%AD%D9%85%D8%AF%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع شهاب",
+      "governorate": "الجيزة",
+      "district": "المهندسين",
+      "detailedAddress": "29 شارع شهاب، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%B4%D9%87%D8%A7%D8%A8%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع سفنكس",
+      "governorate": "الجيزة",
+      "district": "المهندسين",
+      "detailedAddress": "ميدان سفنكس، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%B3%D9%81%D9%86%D9%83%D8%B3%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع العجوزة",
+      "governorate": "الجيزة",
+      "district": "العجوزة",
+      "detailedAddress": "شارع النيل، العجوزة، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B9%D8%AC%D9%88%D8%B2%D8%A9%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع الزمالك",
+      "governorate": "الجيزة",
+      "district": "الزمالك",
+      "detailedAddress": "10 شارع الكامل محمد، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B2%D9%85%D8%A7%D9%84%D9%83%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع 26 يوليو الزمالك",
+      "governorate": "الجيزة",
+      "district": "الزمالك",
+      "detailedAddress": "15 شارع 26 يوليو، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%2026%20%D9%8A%D9%88%D9%84%D9%8A%D9%88%20%D8%A7%D9%84%D8%B2%D9%85%D8%A7%D9%84%D9%83%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع إمبابة",
+      "governorate": "الجيزة",
+      "district": "إمبابة",
+      "detailedAddress": "شارع السودان، ميدان الكيت كات، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A5%D9%85%D8%A8%D8%A7%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع الهرم",
+      "governorate": "الجيزة",
+      "district": "الهرم",
+      "detailedAddress": "233 شارع الهرم، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D9%87%D8%B1%D9%85%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع العريش",
+      "governorate": "الجيزة",
+      "district": "الهرم",
+      "detailedAddress": "شارع العريش تقاطع الهرم، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B9%D8%B1%D9%8A%D8%B4%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع المريوطية",
+      "governorate": "الجيزة",
+      "district": "الهرم",
+      "detailedAddress": "شارع الهرم تقاطع المريوطية، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D9%85%D8%B1%D9%8A%D9%88%D8%B7%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع فيصل",
+      "governorate": "الجيزة",
+      "district": "فيصل",
+      "detailedAddress": "شارع الملك فيصل، محطة المساحة، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D9%81%D9%8A%D8%B5%D9%84%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع الطالبية",
+      "governorate": "الجيزة",
+      "district": "فيصل",
+      "detailedAddress": "شارع فيصل، محطة الطالبية، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B7%D8%A7%D9%84%D8%A8%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع المطبعة",
+      "governorate": "الجيزة",
+      "district": "فيصل",
+      "detailedAddress": "شارع فيصل، محطة المطبعة، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D9%85%D8%B7%D8%A8%D8%B9%D8%A9%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع الرماية",
+      "governorate": "الجيزة",
+      "district": "ميدان الرماية",
+      "detailedAddress": "مساكن الضباط، ميدان الرماية، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B1%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع 6 أكتوبر الرئيسي",
+      "governorate": "الجيزة",
+      "district": "6 أكتوبر",
+      "detailedAddress": "المحور المركزي، بجوار مسجد الحصري، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%206%20%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع نادي 6 أكتوبر",
+      "governorate": "الجيزة",
+      "district": "6 أكتوبر",
+      "detailedAddress": "داخل نادي 6 أكتوبر الرياضي، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D9%86%D8%A7%D8%AF%D9%8A%206%20%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع مول العرب",
+      "governorate": "الجيزة",
+      "district": "6 أكتوبر",
+      "detailedAddress": "داخل مول العرب، ميدان جهينة، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D9%85%D9%88%D9%84%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع مول مصر",
+      "governorate": "الجيزة",
+      "district": "6 أكتوبر",
+      "detailedAddress": "داخل مول مصر، طريق الواحات، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D9%85%D9%88%D9%84%20%D9%85%D8%B5%D8%B1%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع المنطقة الصناعية أكتوبر",
+      "governorate": "الجيزة",
+      "district": "6 أكتوبر",
+      "detailedAddress": "المنطقة الصناعية الثالثة، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%D8%A9%20%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع الشيخ زايد",
+      "governorate": "الجيزة",
+      "district": "الشيخ زايد",
+      "detailedAddress": "هايبر وان، مدخل زايد 1، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B4%D9%8A%D8%AE%20%D8%B2%D8%A7%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع أركان",
+      "governorate": "الجيزة",
+      "district": "الشيخ زايد",
+      "detailedAddress": "أركان بلازا، الشيخ زايد، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A3%D8%B1%D9%83%D8%A7%D9%86%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع بيفرلي هيلز",
+      "governorate": "الجيزة",
+      "district": "الشيخ زايد",
+      "detailedAddress": "كمبوند بيفرلي هيلز، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A8%D9%8A%D9%81%D8%B1%D9%84%D9%8A%20%D9%87%D9%8A%D9%84%D8%B2%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع جاليريا 40",
+      "governorate": "الجيزة",
+      "district": "الشيخ زايد",
+      "detailedAddress": "مول جاليريا 40، محور 26 يوليو، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%AC%D8%A7%D9%84%D9%8A%D8%B1%D9%8A%D8%A7%2040%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع القرية الذكية",
+      "governorate": "الجيزة",
+      "district": "القرية الذكية",
+      "detailedAddress": "مبنى الخدمات، القرية الذكية، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D9%82%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B0%D9%83%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع الحوامدية",
+      "governorate": "الجيزة",
+      "district": "الحوامدية",
+      "detailedAddress": "شارع طراد النيل، الحوامدية، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%AD%D9%88%D8%A7%D9%85%D8%AF%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع البدرشين",
+      "governorate": "الجيزة",
+      "district": "البدرشين",
+      "detailedAddress": "شارع النيل السعيد، البدرشين، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%A8%D8%AF%D8%B1%D8%B4%D9%8A%D9%86%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع أوسيم",
+      "governorate": "الجيزة",
+      "district": "أوسيم",
+      "detailedAddress": "شارع الجمهورية، أوسيم، الجيزة",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A3%D9%88%D8%B3%D9%8A%D9%85%20%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9"
+    },
+    {
+      "branchName": "فرع الإسكندرية الرئيسي",
+      "governorate": "الإسكندرية",
+      "district": "محطة الرمل",
+      "detailedAddress": "24 شارع صلاح سالم، محطة الرمل، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع المنشية",
+      "governorate": "الإسكندرية",
+      "district": "المنشية",
+      "detailedAddress": "9 ميدان التحرير، المنشية، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع الإبراهيمية",
+      "governorate": "الإسكندرية",
+      "district": "الإبراهيمية",
+      "detailedAddress": "207 شارع بورسعيد، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%A5%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع كامب شيزار",
+      "governorate": "الإسكندرية",
+      "district": "كامب شيزار",
+      "detailedAddress": "شارع بورسعيد، كامب شيزار، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D9%83%D8%A7%D9%85%D8%A8%20%D8%B4%D9%8A%D8%B2%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع الشاطبي",
+      "governorate": "الإسكندرية",
+      "district": "الشاطبي",
+      "detailedAddress": "طريق الجيش، بجوار مكتبة الإسكندرية، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B7%D8%A8%D9%8A%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع سبورتنج",
+      "governorate": "الإسكندرية",
+      "district": "سبورتنج",
+      "detailedAddress": "شارع بورسعيد، سبورتنج، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%B3%D8%A8%D9%88%D8%B1%D8%AA%D9%86%D8%AC%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع نادي سبورتنج",
+      "governorate": "الإسكندرية",
+      "district": "سبورتنج",
+      "detailedAddress": "داخل نادي الإسكندرية الرياضي (سبورتنج)، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D9%86%D8%A7%D8%AF%D9%8A%20%D8%B3%D8%A8%D9%88%D8%B1%D8%AA%D9%86%D8%AC%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع كليوباترا",
+      "governorate": "الإسكندرية",
+      "district": "كليوباترا",
+      "detailedAddress": "طريق الحرية، كليوباترا، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D9%83%D9%84%D9%8A%D9%88%D8%A8%D8%A7%D8%AA%D8%B1%D8%A7%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع سيدي جابر",
+      "governorate": "الإسكندرية",
+      "district": "سيدي جابر",
+      "detailedAddress": "شارع مصطفى كامل، سيدي جابر، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%B3%D9%8A%D8%AF%D9%8A%20%D8%AC%D8%A7%D8%A8%D8%B1%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع رشدي",
+      "governorate": "الإسكندرية",
+      "district": "رشدي",
+      "detailedAddress": "شارع أبو قير، رشدي، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%B1%D8%B4%D8%AF%D9%8A%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع ستانلي",
+      "governorate": "الإسكندرية",
+      "district": "ستانلي",
+      "detailedAddress": "253 طريق الجيش، ستانلي، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%B3%D8%AA%D8%A7%D9%86%D9%84%D9%8A%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع جليم",
+      "governorate": "الإسكندرية",
+      "district": "جليم",
+      "detailedAddress": "طريق الجيش، جليم، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%AC%D9%84%D9%8A%D9%85%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع سان ستيفانو",
+      "governorate": "الإسكندرية",
+      "district": "سان ستيفانو",
+      "detailedAddress": "جراند بلازا مول، سان ستيفانو، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%B3%D8%A7%D9%86%20%D8%B3%D8%AA%D9%8A%D9%81%D8%A7%D9%86%D9%88%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع زيزينيا",
+      "governorate": "الإسكندرية",
+      "district": "زيزينيا",
+      "detailedAddress": "شارع أبو قير، زيزينيا، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%B2%D9%8A%D8%B2%D9%8A%D9%86%D9%8A%D8%A7%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع لوران",
+      "governorate": "الإسكندرية",
+      "district": "لوران",
+      "detailedAddress": "402 طريق الجيش، لوران، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D9%84%D9%88%D8%B1%D8%A7%D9%86%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع سموحة",
+      "governorate": "الإسكندرية",
+      "district": "سموحة",
+      "detailedAddress": "36 شارع فيكتور عمانويل، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%B3%D9%85%D9%88%D8%AD%D8%A9%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع نادي سموحة",
+      "governorate": "الإسكندرية",
+      "district": "سموحة",
+      "detailedAddress": "داخل نادي سموحة الرياضي، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D9%86%D8%A7%D8%AF%D9%8A%20%D8%B3%D9%85%D9%88%D8%AD%D8%A9%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع فيكتوريا",
+      "governorate": "الإسكندرية",
+      "district": "فيكتوريا",
+      "detailedAddress": "ميدان فيكتوريا، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D9%81%D9%8A%D9%83%D8%AA%D9%88%D8%B1%D9%8A%D8%A7%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع ميامي",
+      "governorate": "الإسكندرية",
+      "district": "ميامي",
+      "detailedAddress": "120 شارع خالد بن الوليد، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D9%85%D9%8A%D8%A7%D9%85%D9%8A%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع جمال عبد الناصر",
+      "governorate": "الإسكندرية",
+      "district": "ميامي",
+      "detailedAddress": "شارع جمال عبد الناصر، ميامي، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%AC%D9%85%D8%A7%D9%84%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D9%86%D8%A7%D8%B5%D8%B1%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع العصافرة",
+      "governorate": "الإسكندرية",
+      "district": "العصافرة",
+      "detailedAddress": "45 شارع جمال عبد الناصر، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B9%D8%B5%D8%A7%D9%81%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع المندرة",
+      "governorate": "الإسكندرية",
+      "district": "المندرة",
+      "detailedAddress": "طريق الجيش، المندرة، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D9%85%D9%86%D8%AF%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع المنتزه",
+      "governorate": "الإسكندرية",
+      "district": "المنتزه",
+      "detailedAddress": "بجوار بوابة قصر المنتزه، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%B2%D9%87%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع المعمورة",
+      "governorate": "الإسكندرية",
+      "district": "المعمورة",
+      "detailedAddress": "داخل المعمورة الشاطئ، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D9%85%D8%B9%D9%85%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع أبو قير",
+      "governorate": "الإسكندرية",
+      "district": "أبو قير",
+      "detailedAddress": "شارع بورسعيد، أبو قير، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A3%D8%A8%D9%88%20%D9%82%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع بحري",
+      "governorate": "الإسكندرية",
+      "district": "بحري",
+      "detailedAddress": "شارع قصر رأس التين، بحري، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A8%D8%AD%D8%B1%D9%8A%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع العجمي بيطاش",
+      "governorate": "الإسكندرية",
+      "district": "العجمي",
+      "detailedAddress": "شارع البيطاش الرئيسي، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B9%D8%AC%D9%85%D9%8A%20%D8%A8%D9%8A%D8%B7%D8%A7%D8%B4%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع العجمي هانوفيل",
+      "governorate": "الإسكندرية",
+      "district": "العجمي",
+      "detailedAddress": "شارع الهانوفيل الرئيسي، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B9%D8%AC%D9%85%D9%8A%20%D9%87%D8%A7%D9%86%D9%88%D9%81%D9%8A%D9%84%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع الدخيلة",
+      "governorate": "الإسكندرية",
+      "district": "الدخيلة",
+      "detailedAddress": "شارع الإسكندرية مطروح، الدخيلة، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%8A%D9%84%D8%A9%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع العامرية",
+      "governorate": "الإسكندرية",
+      "district": "العامرية",
+      "detailedAddress": "شارع الجمهورية، العامرية، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع برج العرب",
+      "governorate": "الإسكندرية",
+      "district": "برج العرب",
+      "detailedAddress": "المجاورة الأولى، مدينة برج العرب الجديدة، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D8%A8%D8%B1%D8%AC%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    },
+    {
+      "branchName": "فرع كفر عبده",
+      "governorate": "الإسكندرية",
+      "district": "كفر عبده",
+      "detailedAddress": "ميدان سانت جيني، كفر عبده، الإسكندرية",
+      "phone": "19623",
+      "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%A8%D9%86%D9%83%20%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%20%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%20%D9%81%D8%B1%D8%B9%20%D9%83%D9%81%D8%B1%20%D8%B9%D8%A8%D8%AF%D9%87%20%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9"
+    }
+  ]
+}

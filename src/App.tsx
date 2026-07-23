@@ -10,6 +10,8 @@ import HotelModule from './components/HotelModule';
 import HospitalModule from './components/HospitalModule';
 import PostModule from './components/PostModule';
 import BanksModule from './components/BanksModule';
+import SupermarketsModule from './components/SupermarketsModule';
+import EgyptBanksModule from './components/EgyptBanksModule';
 import { Compass, Sparkles, AlertCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -507,6 +509,16 @@ export default function App() {
               {/* Module 3.10: Banks & Exchange Rates */}
               {currentModule === 'banks' && (
                 <BanksModule lang={lang} />
+              )}
+
+              {/* Module 3.11: Supermarkets */}
+              {currentModule === 'supermarkets' && (
+                <SupermarketsModule lang={lang} />
+              )}
+
+              {/* Module: Egypt Banks */}
+              {currentModule === 'egypt_banks' && (
+                <EgyptBanksModule lang={lang} />
               )}
 
               {/* Module 4: Scraper scripts */}
