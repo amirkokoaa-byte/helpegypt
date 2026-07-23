@@ -37802,5 +37802,6 @@ export const egyptBanksData: Bank[] = [
         "phone": "19050",
         "googleMapsLink": "https://maps.google.com/?q=28.9341,32.6624"
       },
-      {
-        "b
+    ]
+  }
+];
