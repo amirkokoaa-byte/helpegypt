@@ -13,6 +13,7 @@ export interface Supermarket {
   nameEn: string;
   category: string;
   categoryAr: string;
+  categoryEn?: string;
   descriptionAr: string;
   descriptionEn: string;
   branches: Branch[];

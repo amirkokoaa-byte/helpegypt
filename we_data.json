@@ -1,0 +1,382 @@
+{
+  "id": "we",
+  "nameAr": "المصرية للاتصالات WE",
+  "nameEn": "Telecom Egypt WE",
+  "color": "#a21caf",
+  "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Telecom_Egypt_Logo.svg",
+  "ussdCodes": [
+    {
+      "code": "*322#",
+      "descriptionAr": "الاستعلام عن الرصيد الحالي",
+      "descriptionEn": "Check current balance",
+      "category": "balance"
+    },
+    {
+      "code": "*688#",
+      "descriptionAr": "معرفة رقم الخط الخاص بك",
+      "descriptionEn": "Find your mobile number",
+      "category": "other"
+    },
+    {
+      "code": "*999#",
+      "descriptionAr": "قائمة باقات الإنترنت (Nitro)",
+      "descriptionEn": "Internet bundles menu (Nitro)",
+      "category": "internet"
+    },
+    {
+      "code": "*666#",
+      "descriptionAr": "قائمة باقات كيكس للمكالمات",
+      "descriptionEn": "Kiks Call bundles menu",
+      "category": "calls"
+    },
+    {
+      "code": "*660#",
+      "descriptionAr": "قائمة باقات تظبيط للمكالمات",
+      "descriptionEn": "Tazbeet Call bundles menu",
+      "category": "calls"
+    },
+    {
+      "code": "*323*رقم*مبلغ#",
+      "descriptionAr": "تحويل الرصيد",
+      "descriptionEn": "Transfer balance",
+      "category": "other"
+    },
+    {
+      "code": "*555*رقم الكارت#",
+      "descriptionAr": "شحن كارت رصيد وي",
+      "descriptionEn": "Recharge prepaid card",
+      "category": "balance"
+    },
+    {
+      "code": "*322#",
+      "descriptionAr": "قائمة وي باي المحفظة الإلكترونية (WE Pay)",
+      "descriptionEn": "WE Pay menu",
+      "category": "cash"
+    },
+    {
+      "code": "*414#",
+      "descriptionAr": "معرفة تفاصيل استهلاك الباقة",
+      "descriptionEn": "Check bundle consumption",
+      "category": "other"
+    },
+    {
+      "code": "111",
+      "descriptionAr": "الاتصال بخدمة العملاء",
+      "descriptionEn": "Call Customer Service",
+      "category": "other"
+    },
+    {
+      "code": "19777",
+      "descriptionAr": "خدمة عملاء الإنترنت المنزلي (WE Space)",
+      "descriptionEn": "Home Internet Customer Service",
+      "category": "other"
+    },
+    {
+      "code": "*777*0#",
+      "descriptionAr": "إلغاء نغمة الكول تون",
+      "descriptionEn": "Cancel Call Tone",
+      "category": "other"
+    },
+    {
+      "code": "*044#",
+      "descriptionAr": "خدمة الاحتفاظ بالمكالمات الفائتة",
+      "descriptionEn": "Missed calls keeper",
+      "category": "other"
+    },
+    {
+      "code": "*015#",
+      "descriptionAr": "عروض وي اليومية والوحدات المجانية",
+      "descriptionEn": "WE daily offers",
+      "category": "other"
+    },
+    {
+      "code": "*504#",
+      "descriptionAr": "خدمة سلفني شكراً",
+      "descriptionEn": "Salefny Shokran service",
+      "category": "other"
+    },
+    {
+      "code": "*4#",
+      "descriptionAr": "الاستعلام عن دعم الـ 4G",
+      "descriptionEn": "Check 4G compatibility",
+      "category": "other"
+    }
+  ],
+  "internetBundles": [
+    {
+      "id": "w_int_1",
+      "nameAr": "نيترو 10 (1250 ميجا)",
+      "nameEn": "Nitro 10 (1250 MB)",
+      "price": 10,
+      "quota": "1250 MB",
+      "validityAr": "28 يوماً",
+      "validityEn": "28 Days",
+      "code": "*999*10#"
+    },
+    {
+      "id": "w_int_2",
+      "nameAr": "نيترو 20 (2800 ميجا)",
+      "nameEn": "Nitro 20 (2800 MB)",
+      "price": 20,
+      "quota": "2800 MB",
+      "validityAr": "28 يوماً",
+      "validityEn": "28 Days",
+      "code": "*999*20#"
+    },
+    {
+      "id": "w_int_3",
+      "nameAr": "نيترو 40 (6500 ميجا)",
+      "nameEn": "Nitro 40 (6500 MB)",
+      "price": 40,
+      "quota": "6500 MB",
+      "validityAr": "28 يوماً",
+      "validityEn": "28 Days",
+      "code": "*999*40#"
+    },
+    {
+      "id": "w_int_4",
+      "nameAr": "نيترو 70 (12500 ميجا)",
+      "nameEn": "Nitro 70 (12.5 GB)",
+      "price": 70,
+      "quota": "12.5 GB",
+      "validityAr": "28 يوماً",
+      "validityEn": "28 Days",
+      "code": "*999*70#"
+    },
+    {
+      "id": "w_int_5",
+      "nameAr": "نيترو 100 (20000 ميجا)",
+      "nameEn": "Nitro 100 (20 GB)",
+      "price": 100,
+      "quota": "20 GB",
+      "validityAr": "28 يوماً",
+      "validityEn": "28 Days",
+      "code": "*999*100#"
+    },
+    {
+      "id": "w_int_6",
+      "nameAr": "نيترو 200 (47000 ميجا)",
+      "nameEn": "Nitro 200 (47 GB)",
+      "price": 200,
+      "quota": "47 GB",
+      "validityAr": "28 يوماً",
+      "validityEn": "28 Days",
+      "code": "*999*200#"
+    },
+    {
+      "id": "w_int_7",
+      "nameAr": "نيترو 450 (100000 ميجا)",
+      "nameEn": "Nitro 450 (100 GB)",
+      "price": 450,
+      "quota": "100 GB",
+      "validityAr": "90 يوماً",
+      "validityEn": "90 Days",
+      "code": "*999*450#"
+    },
+    {
+      "id": "w_home_1",
+      "nameAr": "سوبر إنترنت منزلي 140 جيجا",
+      "nameEn": "Super Home Internet 140 GB",
+      "price": 160,
+      "quota": "140 GB",
+      "validityAr": "30 يوماً",
+      "validityEn": "30 Days",
+      "code": "N/A"
+    },
+    {
+      "id": "w_home_2",
+      "nameAr": "سوبر إنترنت منزلي 200 جيجا",
+      "nameEn": "Super Home Internet 200 GB",
+      "price": 225,
+      "quota": "200 GB",
+      "validityAr": "30 يوماً",
+      "validityEn": "30 Days",
+      "code": "N/A"
+    },
+    {
+      "id": "w_home_3",
+      "nameAr": "سوبر إنترنت منزلي 250 جيجا",
+      "nameEn": "Super Home Internet 250 GB",
+      "price": 280,
+      "quota": "250 GB",
+      "validityAr": "30 يوماً",
+      "validityEn": "30 Days",
+      "code": "N/A"
+    },
+    {
+      "id": "w_home_4",
+      "nameAr": "سوبر إنترنت منزلي 400 جيجا",
+      "nameEn": "Super Home Internet 400 GB",
+      "price": 440,
+      "quota": "400 GB",
+      "validityAr": "30 يوماً",
+      "validityEn": "30 Days",
+      "code": "N/A"
+    },
+    {
+      "id": "w_home_5",
+      "nameAr": "سوبر إنترنت منزلي 600 جيجا",
+      "nameEn": "Super Home Internet 600 GB",
+      "price": 650,
+      "quota": "600 GB",
+      "validityAr": "30 يوماً",
+      "validityEn": "30 Days",
+      "code": "N/A"
+    }
+  ],
+  "callBundles": [
+    {
+      "id": "w_call_1",
+      "nameAr": "كيكس 17 (500 كيكس)",
+      "nameEn": "Kiks 17 (500 Kiks)",
+      "price": 17,
+      "quota": "500 Kiks",
+      "validityAr": "28 يوماً",
+      "validityEn": "28 Days",
+      "code": "*666*17#"
+    },
+    {
+      "id": "w_call_2",
+      "nameAr": "كيكس 25 (1100 كيكس)",
+      "nameEn": "Kiks 25 (1100 Kiks)",
+      "price": 25,
+      "quota": "1100 Kiks",
+      "validityAr": "28 يوماً",
+      "validityEn": "28 Days",
+      "code": "*666*25#"
+    },
+    {
+      "id": "w_call_3",
+      "nameAr": "كيكس 35 (1500 كيكس)",
+      "nameEn": "Kiks 35 (1500 Kiks)",
+      "price": 35,
+      "quota": "1500 Kiks",
+      "validityAr": "28 يوماً",
+      "validityEn": "28 Days",
+      "code": "*666*35#"
+    },
+    {
+      "id": "w_call_4",
+      "nameAr": "كيكس 45 (2200 كيكس)",
+      "nameEn": "Kiks 45 (2200 Kiks)",
+      "price": 45,
+      "quota": "2200 Kiks",
+      "validityAr": "28 يوماً",
+      "validityEn": "28 Days",
+      "code": "*666*45#"
+    },
+    {
+      "id": "w_call_5",
+      "nameAr": "كيكس 75 (3400 كيكس)",
+      "nameEn": "Kiks 75 (3400 Kiks)",
+      "price": 75,
+      "quota": "3400 Kiks",
+      "validityAr": "28 يوماً",
+      "validityEn": "28 Days",
+      "code": "*666*75#"
+    },
+    {
+      "id": "w_call_6",
+      "nameAr": "تظبيط 30 (1000 دقيقة و 1000 ميجا)",
+      "nameEn": "Tazbeet 30 (1000 Mins & 1000 MB)",
+      "price": 30,
+      "quota": "1000 Mins + 1000 MB",
+      "validityAr": "28 يوماً",
+      "validityEn": "28 Days",
+      "code": "*660*30#"
+    },
+    {
+      "id": "w_call_7",
+      "nameAr": "تظبيط 40 (1400 دقيقة و 2000 ميجا)",
+      "nameEn": "Tazbeet 40 (1400 Mins & 2000 MB)",
+      "price": 40,
+      "quota": "1400 Mins + 2000 MB",
+      "validityAr": "28 يوماً",
+      "validityEn": "28 Days",
+      "code": "*660*40#"
+    },
+    {
+      "id": "w_call_8",
+      "nameAr": "تظبيط 70 (3000 دقيقة و 4000 ميجا)",
+      "nameEn": "Tazbeet 70 (3000 Mins & 4000 MB)",
+      "price": 70,
+      "quota": "3000 Mins + 4000 MB",
+      "validityAr": "28 يوماً",
+      "validityEn": "28 Days",
+      "code": "*660*70#"
+    }
+  ],
+  "postpaidPlans": [
+    {
+      "nameAr": "إنديجو بلس 150 (Indigo Plus 150)",
+      "nameEn": "Indigo Plus 150",
+      "price": 150,
+      "minutes": "1500 دقيقة لكل الشبكات",
+      "mobileInternet": "5 جيجابايت + 140 جيجا إنترنت منزلي",
+      "benefitsAr": "الإنترنت المنزلي متضمن في الباقة، ترحيل البيانات، رقم مميز.",
+      "benefitsEn": "Home internet included, data rollover, premium number."
+    },
+    {
+      "nameAr": "إنديجو بلس 250 (Indigo Plus 250)",
+      "nameEn": "Indigo Plus 250",
+      "price": 250,
+      "minutes": "2500 دقيقة لكل الشبكات",
+      "mobileInternet": "10 جيجابايت + 140 جيجا إنترنت منزلي",
+      "benefitsAr": "الإنترنت المنزلي متضمن، ترحيل البيانات، رقم مميز، خدمة عملاء VIP.",
+      "benefitsEn": "Home internet included, data rollover, premium number, VIP support."
+    },
+    {
+      "nameAr": "إنديجو بلس 500 (Indigo Plus 500)",
+      "nameEn": "Indigo Plus 500",
+      "price": 500,
+      "minutes": "5000 دقيقة لكل الشبكات",
+      "mobileInternet": "25 جيجابايت + 250 جيجا إنترنت منزلي",
+      "benefitsAr": "الإنترنت المنزلي متضمن، ترحيل البيانات، 30 دقيقة دولي، قسائم شراء.",
+      "benefitsEn": "Home internet included, data rollover, 30 intl mins, discount vouchers."
+    }
+  ],
+  "adslPlans": [
+    {
+      "id": "w_adsl_1",
+      "quota": "140 جيجابايت",
+      "speed": "حتى 30 ميجابايت/ثانية",
+      "priceBeforeVat": 160,
+      "priceWithVat": 182.4
+    },
+    {
+      "id": "w_adsl_2",
+      "quota": "200 جيجابايت",
+      "speed": "حتى 30 ميجابايت/ثانية",
+      "priceBeforeVat": 225,
+      "priceWithVat": 256.5
+    },
+    {
+      "id": "w_adsl_3",
+      "quota": "250 جيجابايت",
+      "speed": "حتى 30 ميجابايت/ثانية",
+      "priceBeforeVat": 280,
+      "priceWithVat": 319.2
+    },
+    {
+      "id": "w_adsl_4",
+      "quota": "400 جيجابايت",
+      "speed": "حتى 40 ميجابايت/ثانية",
+      "priceBeforeVat": 440,
+      "priceWithVat": 501.6
+    },
+    {
+      "id": "w_adsl_5",
+      "quota": "600 جيجابايت",
+      "speed": "حتى 40 ميجابايت/ثانية",
+      "priceBeforeVat": 650,
+      "priceWithVat": 741
+    },
+    {
+      "id": "w_adsl_6",
+      "quota": "1 تيرابايت (1024 جيجا)",
+      "speed": "حتى 100 ميجابايت/ثانية",
+      "priceBeforeVat": 1050,
+      "priceWithVat": 1197
+    }
+  ]
+}
